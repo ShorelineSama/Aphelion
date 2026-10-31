@@ -1,0 +1,481 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-zh="Open Aphelion — 远日点上的独立软件工作室" data-en="Open Aphelion — Independent Software Studio at the Aphelion">Open Aphelion — 远日点上的独立软件工作室</title>
+  <meta name="description" content="Open Aphelion · ShorelineSama 的独立软件工作室。Distortion 本地 Hi-Fi 无损音乐播放器 / Aphelion IdP 统一身份认证 / YoursGit 提交可视化。">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+  <!-- ======================= 顶栏 ======================= -->
+  <header class="topbar">
+    <a class="brand" href="index.html" aria-label="Open Aphelion 首页">
+      <span class="brand-name">Open Aphelion</span>
+    </a>
+    <nav class="topnav" aria-label="主导航">
+      <div class="nav-item has-menu">
+        <button class="nav-btn" type="button" aria-expanded="false" aria-haspopup="true"><span data-zh="在轨作品" data-en="Works">在轨作品</span><svg class="chev" viewBox="0 0 10 10" focusable="false"><path d="M1.5 3 L5 6.8 L8.5 3" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <div class="menu" role="menu">
+          <div class="menu-col">
+            <p class="menu-title" data-zh="三件作品" data-en="Three works">三件作品</p>
+            <a href="distortion.html" role="menuitem"><span data-zh="Distortion" data-en="Distortion">Distortion</span><span class="sub" data-zh="本地 Hi-Fi 无损播放器" data-en="Local Hi-Fi lossless player">本地 Hi-Fi 无损播放器</span></a>
+            <a href="idp.html" role="menuitem"><span data-zh="Aphelion IdP" data-en="Aphelion IdP">Aphelion IdP</span><span class="sub" data-zh="统一身份认证 · 零依赖" data-en="Identity provider · zero deps">统一身份认证 · 零依赖</span></a>
+            <a href="yoursgit.html" role="menuitem"><span data-zh="YoursGit" data-en="YoursGit">YoursGit</span><span class="sub" data-zh="本地 Git 提交可视化" data-en="Local Git visualization">本地 Git 提交可视化</span></a>
+          </div>
+          <div class="menu-col">
+            <p class="menu-title" data-zh="速览" data-en="Overview">速览</p>
+            <a href="index.html#works" role="menuitem" data-zh="作品总览" data-en="Works overview">作品总览</a>
+            <a href="index.html#detail" role="menuitem" data-zh="夜航图" data-en="Night chart">夜航图</a>
+            <a href="orbit-log.html" role="menuitem" data-zh="轨道日志" data-en="Orbit log">轨道日志</a>
+          </div>
+        </div>
+      </div>
+      <a href="orbit-log.html" data-zh="轨道日志" data-en="Orbit Log">轨道日志</a>
+      <div class="nav-item has-menu">
+        <button class="nav-btn" type="button" aria-expanded="false" aria-haspopup="true"><span data-zh="关于" data-en="About">关于</span><svg class="chev" viewBox="0 0 10 10" focusable="false"><path d="M1.5 3 L5 6.8 L8.5 3" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <div class="menu" role="menu">
+          <div class="menu-col">
+            <p class="menu-title" data-zh="工作室" data-en="Studio">工作室</p>
+            <a href="about.html#naming" role="menuitem" data-zh="命名宇宙" data-en="Naming">命名宇宙</a>
+            <a href="about.html#principles" role="menuitem" data-zh="工程原则" data-en="Principles">工程原则</a>
+            <a href="about.html#team-page" role="menuitem" data-zh="团队" data-en="Crew">团队</a>
+            <a href="about.html#colophon" role="menuitem" data-zh="关于本页" data-en="About this page">关于本页</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    </div>
+    <div class="topbar-right">
+
+      <button class="lang-btn" id="langBtn" type="button">EN</button>
+
+      <a class="nav-cta" href="distortion.html" data-zh="试试 Distortion" data-en="Try Distortion">试试 Distortion</a>
+
+    </div>
+
+  </header>
+
+  <main id="top">
+
+    <!-- ======================= HERO ======================= -->
+    <section class="hero">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow reveal"><span data-zh="独立软件工作室 · EST. 2026" data-en="Independent software studio · Est. 2026">独立软件工作室 · EST. 2026</span></p>
+          <h1 class="wordmark-hero reveal d1" aria-label="Open Aphelion">
+            <span class="wm-open">Open</span>
+            <span>Aphelion</span>
+          </h1>
+          <p class="hero-cn reveal d2" data-zh="远日点，轨道最远处。" data-en="The aphelion — the farthest point of an orbit.">远日点，轨道最远处。</p>
+          <p class="lead reveal d2" data-zh-html="<strong>Aphelion</strong>／远日点：天体轨道上离太阳最远的一点。在这里引力最弱，视野最广。我们把每一件作品送到它最远的地方——离喧嚣最远，离本质最近。三件在轨作品：一台无损播放器，一座身份中枢，一张提交星图。" data-en-html="<strong>Aphelion</strong>: the point in an orbit farthest from the sun. Gravity is weakest here, and the view is widest. We send every work to its farthest point — farthest from the noise, closest to the essence. Three works in orbit: a lossless player, an identity hub, a commit chart."><strong>Aphelion</strong>／远日点：天体轨道上离太阳最远的一点。在这里引力最弱，视野最广。我们把每一件作品送到它最远的地方——离喧嚣最远，离本质最近。三件在轨作品：一台无损播放器，一座身份中枢，一张提交星图。</p>
+          <div class="hero-cta reveal d3">
+            <a class="btn-solid" href="#works" data-zh="查看在轨作品" data-en="View works in orbit">查看在轨作品</a>
+            <a class="btn-ghost" href="about.html" data-zh="为什么叫 Aphelion →" data-en="Why Aphelion →">为什么叫 Aphelion →</a>
+          </div>
+        </div>
+
+        <figure class="orbit-figure reveal d2">
+          <svg id="orbitSvg" viewBox="-40 -12 640 512" role="img" aria-label="开普勒轨道图：太阳位于焦点，三个天体沿偏心椭圆运行">
+            <!-- 焦点：太阳 -->
+            <g class="sun">
+              <circle cx="150" cy="330" r="30" class="sun-halo2"/>
+              <circle cx="150" cy="330" r="21" class="sun-halo1"/>
+              <circle cx="150" cy="330" r="12" class="sun-core"/>
+            </g>
+
+            <!-- 轨道 1 · Distortion -->
+            <ellipse class="orbit o1" cx="196.5" cy="321.8" rx="105" ry="93.8" transform="rotate(-10 196.5 321.8)"/>
+            <!-- 轨道 2 · Aphelion IdP -->
+            <ellipse class="orbit o2" cx="221.4" cy="288.8" rx="165" ry="142.9" transform="rotate(-30 221.4 288.8)"/>
+            <!-- 轨道 3 · YoursGit -->
+            <ellipse class="orbit o3" cx="248.8" cy="252.8" rx="228" ry="190.4" transform="rotate(-38 248.8 252.8)"/>
+
+            <!-- 远日点标记 -->
+            <circle cx="300"   cy="303.5" r="3" class="ap-mark"/>
+            <circle cx="364.3" cy="206.3" r="3" class="ap-mark"/>
+            <circle cx="428.4" cy="112.3" r="3" class="ap-mark"/>
+            <line x1="428.4" y1="112.3" x2="472" y2="84" class="ap-line"/>
+            <text x="478" y="82" class="ap-label">APHELION</text>
+            <text x="478" y="96" class="ap-sub" data-zh="远日点 · 离太阳最远处" data-en="Aphelion · farthest from the sun">远日点 · 离太阳最远处</text>
+
+            <!-- 天体（JS 驱动，真实开普勒运动；初始位置=各自远日点，防闪位） -->
+            <g id="body1" class="body" tabindex="0" role="button" aria-label="Distortion — 打开作品页" transform="translate(346.5 295.4)">
+              <circle r="7" class="body-dot"/>
+              <text class="body-label" dy="-18"><tspan x="0" class="lb-name">DISTORTION</tspan><tspan x="0" dy="13" class="lb-sub">v1.0 · 失真</tspan></text>
+            </g>
+            <g id="body2" class="body" tabindex="0" role="button" aria-label="Aphelion IdP — 打开作品页" transform="translate(435.7 165)">
+              <circle r="6" class="body-dot"/>
+              <text class="body-label" dy="-18"><tspan x="0" class="lb-name">APHELION IDP</tspan><tspan x="0" dy="13" class="lb-sub">v1 · 身份中枢</tspan></text>
+            </g>
+            <g id="body3" class="body" tabindex="0" role="button" aria-label="YoursGit — 打开作品页" transform="translate(428.5 112.4)">
+              <circle r="5.5" class="body-dot"/>
+              <text class="body-label" dy="-18"><tspan x="0" class="lb-name">YOURSGIT</tspan><tspan x="0" dy="13" class="lb-sub">v0.1.0 · 提交星图</tspan></text>
+            </g>
+
+            <!-- 图角注记 -->
+            <text x="18" y="464" class="fig-corner">FIG. 01 — KEPLERIAN ORBITS · e = 0.45 / 0.50 / 0.55</text>
+          </svg>
+          <figcaption>
+            <span data-zh="开普勒轨道演示：太阳居焦点，三轨道依次描线，天体拖着彗尾入轨运行——由开普勒方程数值解驱动，近日加速、远日减速。悬停识别，点击进入作品页。" data-en="Keplerian orbit demo: the sun sits at the focus, three orbits draw themselves in, bodies enter with comet tails — driven by a numerical solution of Kepler's equation. Hover to identify, click to open.">开普勒轨道演示：太阳居焦点，三轨道依次描线，天体拖着彗尾入轨运行——由开普勒方程数值解驱动，近日加速、远日减速。悬停识别，点击进入作品页。</span>
+            <span class="speed-ctl" role="group" aria-label="时间流速">
+              <button class="speed-btn" type="button" data-speed="1" aria-pressed="true">1×</button>
+              <button class="speed-btn" type="button" data-speed="8" aria-pressed="false">8×</button>
+              <button class="speed-btn" type="button" data-speed="32" aria-pressed="false">32×</button>
+            </span>
+            <button class="replay-btn" id="replayBtn" type="button" data-zh="重播演示" data-en="Replay">重播演示</button>
+          </figcaption>
+        </figure>
+      </div>
+
+      <ul class="hero-stats reveal">
+        <li><b>03</b><span data-zh="在轨作品" data-en="Works in orbit">在轨作品</span></li>
+        <li><b>2600+</b><span data-zh="自动化测试用例" data-en="Automated tests">自动化测试用例</span></li>
+        <li><b>0</b><span data-zh="IdP 第三方运行时依赖" data-en="Third-party deps in IdP">IdP 第三方运行时依赖</span></li>
+        <li><b>496</b><span data-zh="Distortion 提交并持续增长" data-en="Distortion commits and counting">Distortion 提交并持续增长</span></li>
+      </ul>
+    </section>
+
+    <!-- ======================= 宣言 ======================= -->
+    <section class="manifesto">
+      <h2 class="reveal" data-zh-html="软件应当跑在<em>离你最近的地方</em>——数据在磁盘上，测试在仓库里，依赖能少一个就少一个。" data-en-html="Software should run <em>closest to you</em> — data on your disk, tests in the repo, one dependency less wherever possible.">软件应当跑在<em>离你最近的地方</em>——数据在磁盘上，测试在仓库里，依赖能少一个就少一个。</h2>
+      <p class="reveal d1" data-zh="Open Aphelion 是 ShorelineSama 的独立软件工作室。没有投资人，没有路线图会议，只有一个人和三条轨道：把播放器、身份协议与版本控制工具，一件一件送上它们各自的最远点。每一步都有测试守着，每一次事故都有记录。" data-en="Open Aphelion is the independent software studio of ShorelineSama. No investors, no roadmap meetings — one person and three orbits: sending a player, an identity protocol and a version-control tool to their farthest points, one by one. Every step is guarded by tests, every incident is on record.">Open Aphelion 是 ShorelineSama 的独立软件工作室。没有投资人，没有路线图会议，只有一个人和三条轨道：把播放器、身份协议与版本控制工具，一件一件送上它们各自的最远点。每一步都有测试守着，每一次事故都有记录。</p>
+    </section>
+
+    <!-- ======================= 01 在轨作品 ======================= -->
+    <section class="sec" id="works">
+      <header class="sec-head reveal">
+        <p class="eyebrow"><em>01</em>· <span data-zh="在轨作品 / WORKS" data-en="Works in orbit / WORKS">在轨作品 / WORKS</span></p>
+        <h2 data-zh="三件作品，三条轨道。" data-en="Three works, three orbits.">三件作品，三条轨道。</h2>
+        <p class="sec-sub" data-zh="全部本地优先：数据在用户磁盘上，不在别人的服务器里。以下每一项都从源码与文档核实。" data-en="Local-first, all of them: data lives on the user's disk, not on someone else's server. Every claim below is verified against source and docs.">全部本地优先：数据在用户磁盘上，不在别人的服务器里。以下每一项都从源码与文档核实。</p>
+      </header>
+
+      <div class="cards">
+
+        <article class="card reveal" id="card-distortion">
+          <div class="card-top">
+            <span class="card-no">01</span>
+            <span class="chip">v1.0 · STABLE</span>
+          </div>
+          <h3 class="card-title">Distortion <span class="card-cn" data-zh="失真" data-en="distortion">失真</span></h3>
+          <p class="card-role" data-zh="本地 Hi-Fi 无损音乐播放器" data-en="Local Hi-Fi lossless music player">本地 Hi-Fi 无损音乐播放器</p>
+          <p class="card-desc" data-zh="为本地曲库而生的无损播放器：多引擎音频内核、WASAPI 独占与 DSD 直通、Apple Music 风格逐字歌词引擎、Blender 风格节点编辑器，以及一套可分发、可声明权限的插件系统。" data-en="A lossless player built for local libraries: a multi-engine audio kernel, WASAPI exclusive and DSD passthrough, an Apple-Music-style word-synced lyrics engine, a Blender-style node editor, and a distributable permission-declaring plugin system.">为本地曲库而生的无损播放器：多引擎音频内核、WASAPI 独占与 DSD 直通、Apple Music 风格逐字歌词引擎、Blender 风格节点编辑器，以及一套可分发、可声明权限的插件系统。</p>
+          <dl class="card-meta">
+            <div><dt>PLATFORM</dt><dd>Windows · Android</dd></div>
+            <div><dt>LICENSE</dt><dd data-zh="AGPL-3.0 开源" data-en="AGPL-3.0 open source">AGPL-3.0 开源</dd></div>
+            <div><dt>STACK</dt><dd>Electron 43 · React 19 · TypeScript · ONNX · Three.js · SQLite</dd></div>
+          </dl>
+          <a class="card-link" href="distortion.html" data-zh="打开完整详情页 →" data-en="Open full page →">打开完整详情页 →</a>
+        </article>
+
+        <article class="card reveal d1" id="card-idp">
+          <div class="card-top">
+            <span class="card-no">02</span>
+            <span class="chip">v1 · SELF-HOSTED</span>
+          </div>
+          <h3 class="card-title">Aphelion IdP <span class="card-cn" data-zh="身份中枢" data-en="identity hub">身份中枢</span></h3>
+          <p class="card-role" data-zh="OAuth2 / OIDC 统一身份认证平台" data-en="OAuth2 / OIDC identity provider">OAuth2 / OIDC 统一身份认证平台</p>
+          <p class="card-desc" data-zh="团队自建的身份中枢，为 Distortion 与生态应用提供账号与授权管理。运行时零第三方依赖——只用 Node 内置模块，一个单文件 exe 即可自托管。" data-en="A self-built identity hub managing accounts and authorizations for Distortion and ecosystem apps. Zero third-party runtime dependencies — Node built-ins only; a single-file exe is all it takes to self-host.">团队自建的身份中枢，为 Distortion 与生态应用提供账号与授权管理。运行时零第三方依赖——只用 Node 内置模块，一个单文件 exe 即可自托管。</p>
+          <dl class="card-meta">
+            <div><dt>PROTOCOL</dt><dd>OAuth2 + PKCE · OIDC</dd></div>
+            <div><dt>DEPS</dt><dd data-zh="0 third-party（纯 Node 内置）" data-en="0 third-party (Node built-ins only)">0 third-party（纯 Node 内置）</dd></div>
+            <div><dt>FORM</dt><dd>Tauri 86 MB · Electron 278 MB · SEA 83 MB</dd></div>
+          </dl>
+          <a class="card-link" href="idp.html" data-zh="打开完整详情页 →" data-en="Open full page →">打开完整详情页 →</a>
+        </article>
+
+        <article class="card reveal d2" id="card-yoursgit">
+          <div class="card-top">
+            <span class="card-no">03</span>
+            <span class="chip">v0.1.0 · EARLY PREVIEW</span>
+          </div>
+          <h3 class="card-title">YoursGit <span class="card-cn" data-zh="提交星图" data-en="commit chart">提交星图</span></h3>
+          <p class="card-role" data-zh="本地 Git 提交可视化桌面应用" data-en="Local Git commit visualization">本地 Git 提交可视化桌面应用</p>
+          <p class="card-desc" data-zh="把仓库的提交历史画出来：分支图布局引擎、贡献热力图、统计与时间线。数据完全在本地解析——一条 git log 都不会离开你的磁盘。" data-en="Draw your repository's history: a branch-graph layout engine, contribution heatmap, stats and timeline. Everything is parsed locally — not a single git log leaves your disk.">把仓库的提交历史画出来：分支图布局引擎、贡献热力图、统计与时间线。数据完全在本地解析——一条 git log 都不会离开你的磁盘。</p>
+          <dl class="card-meta">
+            <div><dt>PLATFORM</dt><dd>Windows（Electron 31）</dd></div>
+            <div><dt>MODE</dt><dd data-zh="全本地解析 · 零上传" data-en="Fully local · zero upload">全本地解析 · 零上传</dd></div>
+            <div><dt>STACK</dt><dd>React 18 · Vite 5 · TypeScript</dd></div>
+          </dl>
+          <a class="card-link" href="yoursgit.html" data-zh="打开完整详情页 →" data-en="Open full page →">打开完整详情页 →</a>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ======================= 02 夜航图（深色反转段） ======================= -->
+    <section class="sec night" id="detail">
+      <header class="sec-head reveal">
+        <p class="eyebrow"><em>02</em>· <span data-zh="夜航图 / NIGHT CHART" data-en="Night chart / NIGHT CHART">夜航图 / NIGHT CHART</span></p>
+        <h2 data-zh="作品的详细轨道参数。" data-en="Detailed orbital parameters.">作品的详细轨道参数。</h2>
+        <p class="sec-sub" data-zh="从源码、文档与测试日志里核对过的每一项，此处不写做不到的事。完整详情见各作品页。" data-en="Every item verified against source, docs and test logs — nothing promised that isn't built. Full pages per work.">从源码、文档与测试日志里核对过的每一项，此处不写做不到的事。完整详情见各作品页。</p>
+      </header>
+
+      <!-- Distortion -->
+      <article class="panel reveal" id="detail-distortion">
+        <div class="panel-head">
+          <span class="panel-no">01</span>
+          <h3>Distortion <span data-zh="失真 · Aurorether Music NEXT" data-en="distortion · Aurorether Music NEXT">失真 · Aurorether Music NEXT</span></h3>
+          <a class="panel-flag" href="distortion.html" data-zh="详情页 →" data-en="Full page →">详情页 →</a>
+        </div>
+        <div class="panel-grid">
+          <div class="pgroup">
+            <h4 data-zh="音频内核" data-en="Audio kernel">音频内核</h4>
+            <ul>
+              <li data-zh="多音频引擎自动协商切换（HTML5 / 原生）" data-en="Multi-engine audio with auto negotiation (HTML5 / native)">多音频引擎自动协商切换（HTML5 / 原生）</li>
+              <li data-zh="WASAPI 独占输出 · DSD DoP 直通" data-en="WASAPI exclusive output · DSD DoP passthrough">WASAPI 独占输出 · DSD DoP 直通</li>
+              <li data-zh="ReplayGain 响度规范 · 10 段 EQ" data-en="ReplayGain loudness · 10-band EQ">ReplayGain 响度规范 · 10 段 EQ</li>
+              <li data-zh="空间音频 HRTF · 变速不变调" data-en="Spatial audio HRTF · pitch-locked tempo">空间音频 HRTF · 变速不变调</li>
+              <li data-zh="双 deck crossfade 混音" data-en="Dual-deck crossfade mixing">双 deck crossfade 混音</li>
+            </ul>
+          </div>
+          <div class="pgroup">
+            <h4 data-zh="歌词与视觉" data-en="Lyrics & visuals">歌词与视觉</h4>
+            <ul>
+              <li data-zh="Apple Music 风格逐字歌词引擎（TTML）" data-en="Apple-Music-style word-synced lyrics (TTML)">Apple Music 风格逐字歌词引擎（TTML）</li>
+              <li data-zh="Three.js 沉浸化层 · 歌词可视化插件位" data-en="Three.js immersion layer · lyrics visualizer slots">Three.js 沉浸化层 · 歌词可视化插件位</li>
+              <li data-zh="Blender 风格节点编辑器（N 面板 · minimap）" data-en="Blender-style node editor (N-panel · minimap)">Blender 风格节点编辑器（N 面板 · minimap）</li>
+              <li data-zh="外观实验室 50+ 项设置" data-en="Appearance lab with 50+ settings">外观实验室 50+ 项设置</li>
+              <li data-zh="夜色编辑视觉系统（自建）" data-en="Editorial Nocturne visual system (in-house)">夜色编辑视觉系统（自建）</li>
+            </ul>
+          </div>
+          <div class="pgroup">
+            <h4 data-zh="生态与投屏" data-en="Ecosystem & casting">生态与投屏</h4>
+            <ul>
+              <li data-zh="DLNA 投屏 · MJPEG 屏幕投射" data-en="DLNA casting · MJPEG screen projection">DLNA 投屏 · MJPEG 屏幕投射</li>
+              <li data-zh="蓝牙输出路由 · SMTC 系统集成" data-en="Bluetooth routing · SMTC integration">蓝牙输出路由 · SMTC 系统集成</li>
+              <li data-zh="B 站视频与合集导入" data-en="Bilibili video & collection import">B 站视频与合集导入</li>
+              <li data-zh="WebDAV / NAS · 流媒体曲源" data-en="WebDAV / NAS · streaming sources">WebDAV / NAS · 流媒体曲源</li>
+              <li data-zh="19 个全局快捷键 · Ctrl+K 命令面板" data-en="19 global shortcuts · Ctrl+K command palette">19 个全局快捷键 · Ctrl+K 命令面板</li>
+            </ul>
+          </div>
+          <div class="pgroup">
+            <h4 data-zh="智能与扩展" data-en="Intelligence & extensions">智能与扩展</h4>
+            <ul>
+              <li data-zh="ONNX beat_this 节拍检测" data-en="ONNX beat_this beat detection">ONNX beat_this 节拍检测</li>
+              <li data-zh="自动混音引擎 · song-links 引擎" data-en="Auto-mix engine · song-links engine">自动混音引擎 · song-links 引擎</li>
+              <li data-zh="本地大模型（llama.cpp 集成）" data-en="On-device LLM (llama.cpp)">本地大模型（llama.cpp 集成）</li>
+              <li data-zh="ZIP 插件包 · esbuild 运行时编译" data-en="ZIP plugin packs · esbuild runtime compile">ZIP 插件包 · esbuild 运行时编译</li>
+              <li data-zh="显式权限声明 · API 版本协商" data-en="Explicit permissions · API version negotiation">显式权限声明 · API 版本协商</li>
+            </ul>
+          </div>
+        </div>
+        <p class="panel-nums"><b>2667</b> <span data-zh="个自动化测试通过" data-en="automated tests passing">个自动化测试通过</span><i>·</i><b>520</b> <span data-zh="项功能规划池" data-en="item feature pool">项功能规划池</span><i>·</i><b>NSIS</b> + <b>APK</b> <span data-zh="双端分发" data-en="dual-platform distribution">双端分发</span></p>
+      </article>
+
+      <!-- Aphelion IdP -->
+      <article class="panel reveal" id="detail-idp">
+        <div class="panel-head">
+          <span class="panel-no">02</span>
+          <h3>Aphelion IdP <span data-zh="统一身份认证平台" data-en="Unified identity provider">统一身份认证平台</span></h3>
+          <a class="panel-flag" href="idp.html" data-zh="详情页 →" data-en="Full page →">详情页 →</a>
+        </div>
+        <div class="panel-grid two">
+          <div class="pgroup">
+            <h4 data-zh="标准端点" data-en="Standard endpoints">标准端点</h4>
+            <ul class="mono-list">
+              <li>/oauth/authorize</li>
+              <li>/oauth/token</li>
+              <li>/oauth/userinfo</li>
+              <li>/oauth/revoke</li>
+              <li>/.well-known/openid-configuration</li>
+              <li>/health</li>
+            </ul>
+          </div>
+          <div class="pgroup">
+            <h4 data-zh="安全设计" data-en="Security design">安全设计</h4>
+            <ul>
+              <li data-zh="scrypt 加盐哈希 + timingSafeEqual 比对" data-en="scrypt salted hashing + timingSafeEqual">scrypt 加盐哈希 + timingSafeEqual 比对</li>
+              <li data-zh="授权码 5 分钟有效 · 一次性 · 绑定回调" data-en="Codes valid 5 min · single-use · bound to redirect">授权码 5 分钟有效 · 一次性 · 绑定回调</li>
+              <li data-zh="refresh_token 轮换，旧令牌即时失效" data-en="refresh_token rotation, instant revocation">refresh_token 轮换，旧令牌即时失效</li>
+              <li data-zh="HttpOnly · SameSite 管理会话" data-en="HttpOnly · SameSite admin sessions">HttpOnly · SameSite 管理会话</li>
+              <li data-zh="回调地址精确白名单 · 强制 PKCE S256" data-en="Exact redirect whitelist · PKCE S256 enforced">回调地址精确白名单 · 强制 PKCE S256</li>
+              <li data-zh="审计日志保留 2000 条" data-en="Audit log keeps last 2000 entries">审计日志保留 2000 条</li>
+            </ul>
+          </div>
+          <div class="pgroup">
+            <h4 data-zh="分发形态" data-en="Distribution">分发形态</h4>
+            <ul>
+              <li data-zh="Tauri 外壳 2.7 MB + Node SEA 侧车 = 86 MB" data-en="Tauri shell 2.7 MB + Node SEA sidecar = 86 MB">Tauri 外壳 2.7 MB + Node SEA 侧车 = 86 MB</li>
+              <li data-zh="Electron 全兼容版 278 MB" data-en="Electron compatibility build 278 MB">Electron 全兼容版 278 MB</li>
+              <li data-zh="Node SEA 单文件 83 MB · 双击即起服务" data-en="Node SEA single file 83 MB · double-click to serve">Node SEA 单文件 83 MB · 双击即起服务</li>
+              <li data-zh="源码直启：node server.mjs（零安装）" data-en="Run from source: node server.mjs (zero install)">源码直启：node server.mjs（零安装）</li>
+            </ul>
+          </div>
+          <div class="pgroup">
+            <h4 data-zh="工程底线" data-en="Engineering floor">工程底线</h4>
+            <ul>
+              <li data-zh="端到端验证脚本 17/17 通过" data-en="End-to-end verification 17/17 passing">端到端验证脚本 17/17 通过</li>
+              <li data-zh="运行时零第三方依赖（http / crypto / fs）" data-en="Zero third-party runtime (http / crypto / fs)">运行时零第三方依赖（http / crypto / fs）</li>
+              <li data-zh="JSON 原子写 · 坏库自动备份重建" data-en="Atomic JSON writes · auto backup on corruption">JSON 原子写 · 坏库自动备份重建</li>
+              <li data-zh="面向本机与内网，不做未加固的公网暴露" data-en="For localhost & LAN — no unhardened public exposure">面向本机与内网，不做未加固的公网暴露</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <!-- YoursGit -->
+      <article class="panel reveal" id="detail-yoursgit">
+        <div class="panel-head">
+          <span class="panel-no">03</span>
+          <h3>YoursGit <span data-zh="提交星图 · 本地 Git 可视化" data-en="Commit chart · local Git visualization">提交星图 · 本地 Git 可视化</span></h3>
+          <a class="panel-flag" href="yoursgit.html" data-zh="详情页 →" data-en="Full page →">详情页 →</a>
+        </div>
+        <div class="panel-grid two">
+          <div class="pgroup">
+            <h4 data-zh="面板" data-en="Panels">面板</h4>
+            <ul>
+              <li data-zh="提交分支图（自研图布局引擎）" data-en="Commit branch graph (in-house layout engine)">提交分支图（自研图布局引擎）</li>
+              <li data-zh="贡献热力图 · 仓库统计 · 时间线" data-en="Contribution heatmap · repo stats · timeline">贡献热力图 · 仓库统计 · 时间线</li>
+              <li data-zh="提交详情面板" data-en="Commit detail panel">提交详情面板</li>
+            </ul>
+          </div>
+          <div class="pgroup">
+            <h4 data-zh="工程注记" data-en="Engineering notes">工程注记</h4>
+            <ul>
+              <li data-zh="图布局算法独立单元测试" data-en="Dedicated unit tests for graph layout">图布局算法独立单元测试</li>
+              <li data-zh="万级提交虚拟滚动" data-en="Virtual scrolling for 10k+ commits">万级提交虚拟滚动</li>
+              <li data-zh="内置 mock 数据模式" data-en="Built-in mock data mode">内置 mock 数据模式</li>
+              <li data-zh="本地 git 解析 · 数据零上传" data-en="Local git parsing · zero upload">本地 git 解析 · 数据零上传</li>
+            </ul>
+          </div>
+        </div>
+        <p class="panel-nums"><b>v0.1.0</b> <span data-zh="早期预览" data-en="early preview">早期预览</span><i>·</i><span data-zh="持续在轨调整，路线以提交历史为准。" data-en="Continuously adjusted in orbit; the roadmap is the commit history.">持续在轨调整，路线以提交历史为准。</span></p>
+      </article>
+    </section>
+
+    <!-- ======================= 03 轨道日志 ======================= -->
+    <section class="sec" id="log">
+      <header class="sec-head reveal">
+        <p class="eyebrow"><em>03</em>· <span data-zh="轨道日志 / ORBIT LOG" data-en="Orbit log / ORBIT LOG">轨道日志 / ORBIT LOG</span></p>
+        <h2 data-zh="在轨记录，含事故。" data-en="Orbit records, incidents included.">在轨记录，含事故。</h2>
+        <p class="sec-sub" data-zh="独立软件的真实轨迹：有里程碑，也有 git 对象库损坏这种事。全部日期取自仓库与文档。" data-en="The honest trajectory of indie software: milestones, and corrupted git object stores too. All dates from repos and docs.">独立软件的真实轨迹：有里程碑，也有 git 对象库损坏这种事。全部日期取自仓库与文档。</p>
+      </header>
+      <ol class="log">
+        <li class="reveal">
+          <span class="log-time">2026 · <span data-zh="秋" data-en="Autumn">秋</span></span>
+          <div class="log-body">
+            <b data-zh="Distortion 立项" data-en="Distortion begins">Distortion 立项</b>
+            <p data-zh="本地 Hi-Fi 无损播放器开始发育。早期提交历史后来灭失，确切起点成了谜——我们不编造它。" data-en="The local Hi-Fi lossless player starts growing. Its early commit history was later lost — the exact beginning is a mystery, and we won't invent one.">本地 Hi-Fi 无损播放器开始发育。早期提交历史后来灭失，确切起点成了谜——我们不编造它。</p>
+          </div>
+        </li>
+        <li class="reveal">
+          <span class="log-time">2026-09-05</span>
+          <div class="log-body">
+            <b data-zh="520 项功能共识清单落盘" data-en="A 520-item feature list lands">520 项功能共识清单落盘</b>
+            <p data-zh="grilling 式设计拷问的产物：《Distortion 功能脑暴清单（520 项）》F001–F520，成为全页面重写与 Three.js 沉浸化改造的功能池。" data-en="Product of grilling-style design interrogation: the 520-item Distortion feature brainstorm (F001–F520), now the feature pool for the full rewrite and Three.js immersion.">grilling 式设计拷问的产物：《Distortion 功能脑暴清单（520 项）》F001–F520，成为全页面重写与 Three.js 沉浸化改造的功能池。</p>
+          </div>
+        </li>
+        <li class="reveal">
+          <span class="log-time">2026-09-17</span>
+          <div class="log-body">
+            <b data-zh="git 历史灭失，当日重建" data-en="Git history lost, rebuilt same day">git 历史灭失，当日重建</b>
+            <p data-zh=".git 对象库损坏，全部历史灭失。当日重建仓库基线，从第 1 个提交重新开始——那批 fix 提交成了新的创世记录。" data-en="The .git object store corrupted and all history was lost. The repo baseline was rebuilt the same day, starting again from commit #1 — those fixes became the new genesis record.">.git 对象库损坏，全部历史灭失。当日重建仓库基线，从第 1 个提交重新开始——那批 fix 提交成了新的创世记录。</p>
+          </div>
+        </li>
+        <li class="reveal">
+          <span class="log-time">2026-10-18 / 29</span>
+          <div class="log-body">
+            <b data-zh="三轮仓库大治理" data-en="Three rounds of repo hygiene">三轮仓库大治理</b>
+            <p data-zh="跟踪文件 2427 → 997，误入库的 7.8 GB 浏览器配置移出版本库；typecheck、2667 项测试、build 全绿。只做可逆操作，逐条确认。" data-en="Tracked files 2427 → 997; 7.8 GB of mistakenly committed browser profiles moved out. Typecheck, 2667 tests and build all green. Reversible operations only, confirmed item by item.">跟踪文件 2427 → 997，误入库的 7.8 GB 浏览器配置移出版本库；typecheck、2667 项测试、build 全绿。只做可逆操作，逐条确认。</p>
+          </div>
+        </li>
+        <li class="reveal">
+          <span class="log-time">2026-10</span>
+          <div class="log-body">
+            <b data-zh="Aphelion IdP 发布" data-en="Aphelion IdP ships">Aphelion IdP 发布</b>
+            <p data-zh="OAuth2 授权码 + PKCE / OIDC 身份中枢上线：零第三方依赖，Tauri 86 MB 单包分发，端到端验证 17/17。" data-en="The OAuth2 authorization-code + PKCE / OIDC identity hub goes live: zero third-party dependencies, 86 MB Tauri single package, end-to-end verification 17/17.">OAuth2 授权码 + PKCE / OIDC 身份中枢上线：零第三方依赖，Tauri 86 MB 单包分发，端到端验证 17/17。</p>
+          </div>
+        </li>
+        <li class="reveal">
+          <span class="log-time">2026-10-31</span>
+          <div class="log-body">
+            <b data-zh="第 496 个提交落下" data-en="Commit #496 lands">第 496 个提交落下</b>
+            <p data-zh="一句话生成歌单、歌词编辑器、心情标签、互联同步；YoursGit v0.1.0 早期预览同步在轨调整。本站同日上线。" data-en="Playlist-from-a-sentence, lyrics editor, mood tags, sync components; YoursGit v0.1.0 early preview adjusting in orbit. This site launched the same day.">一句话生成歌单、歌词编辑器、心情标签、互联同步；YoursGit v0.1.0 早期预览同步在轨调整。本站同日上线。</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ======================= 04 命名宇宙 ======================= -->
+    <div class="tint tint-wrap">
+      <section class="sec" id="philosophy">
+        <header class="sec-head reveal">
+          <p class="eyebrow"><em>04</em>· <span data-zh="命名宇宙 / NAMING" data-en="Naming / NAMING">命名宇宙 / NAMING</span></p>
+          <h2 data-zh="从物理与天文里取名。" data-en="Names from physics and astronomy.">从物理与天文里取名。</h2>
+        </header>
+        <p class="prose reveal" data-zh-html="<strong>Distortion</strong> 取自信号与时空的畸变——音频的失真，也是引力透镜的偏折；<strong>Aphelion</strong> 是轨道上离太阳最远的一点；<strong>YoursGit</strong> 把版本控制的主语还给「你」。三个名字共享同一套隐喻系统。我们不解释热爱，只命名它。" data-en-html="<strong>Distortion</strong> comes from the warping of signals and spacetime — audio clipping, and the bending of light by a gravitational lens. <strong>Aphelion</strong> is the farthest point of an orbit from the sun. <strong>YoursGit</strong> hands the subject of version control back to <i>you</i>. Three names, one metaphor system. We don't explain the love; we just name it."><strong>Distortion</strong> 取自信号与时空的畸变——音频的失真，也是引力透镜的偏折；<strong>Aphelion</strong> 是轨道上离太阳最远的一点；<strong>YoursGit</strong> 把版本控制的主语还给「你」。三个名字共享同一套隐喻系统。我们不解释热爱，只命名它。</p>
+
+        <div class="principles">
+          <div class="principle reveal">
+            <span class="p-no">P·1</span>
+            <h3 data-zh="本地优先" data-en="Local first">本地优先</h3>
+            <p data-zh="三件作品都能在断网环境完成全部核心功能。数据在用户磁盘上，不在别人的服务器里。" data-en="All three works complete their core functions offline. Data lives on the user's disk, not on someone else's server.">三件作品都能在断网环境完成全部核心功能。数据在用户磁盘上，不在别人的服务器里。</p>
+          </div>
+          <div class="principle reveal d1">
+            <span class="p-no">P·2</span>
+            <h3 data-zh="克制依赖" data-en="Minimal deps">克制依赖</h3>
+            <p data-zh="IdP 的运行时依赖是零。依赖每少一个，供应链就少一分风险，分发就轻一分。" data-en="The IdP has zero runtime dependencies. Every dependency removed is one less supply-chain risk and a lighter ship.">IdP 的运行时依赖是零。依赖每少一个，供应链就少一分风险，分发就轻一分。</p>
+          </div>
+          <div class="principle reveal d2">
+            <span class="p-no">P·3</span>
+            <h3 data-zh="测试先行" data-en="Test first">测试先行</h3>
+            <p data-zh="2600+ 用例守着播放器内核，17 个端到端用例守着身份服务，图布局算法也有自己的单测。" data-en="2600+ cases guard the player kernel, 17 end-to-end cases guard the identity service, and the graph layout has its own unit tests.">2600+ 用例守着播放器内核，17 个端到端用例守着身份服务，图布局算法也有自己的单测。</p>
+          </div>
+          <div class="principle reveal d3">
+            <span class="p-no">P·4</span>
+            <h3 data-zh="克制的动效" data-en="Restrained motion">克制的动效</h3>
+            <p data-zh="rise ≤ 300ms，hover ≤ 240ms，尊重 prefers-reduced-motion。动效服务于层级，不服务于炫技。" data-en="rise ≤ 300ms, hover ≤ 240ms, prefers-reduced-motion respected. Motion serves hierarchy, not showing off.">rise ≤ 300ms，hover ≤ 240ms，尊重 prefers-reduced-motion。动效服务于层级，不服务于炫技。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================= 开源与关于本页 ======================= -->
+      <section class="sec" id="open">
+        <header class="sec-head reveal">
+          <p class="eyebrow"><em>+</em>· <span data-zh="开源与工具房 / COLOPHON" data-en="Open source & colophon">开源与工具房 / COLOPHON</span></p>
+          <h2 data-zh="作品回馈开源，本页也不例外。" data-en="Works give back to open source — so does this page.">作品回馈开源，本页也不例外。</h2>
+        </header>
+        <div class="openbox">
+          <div class="open-cell reveal">
+            <h3 data-zh="开源许可" data-en="Licensing">开源许可</h3>
+            <p data-zh="Distortion 以 AGPL-3.0 发布——修改与再分发的网络服务同样必须开源。Aphelion IdP 与 YoursGit 当前为团队自用与早期预览阶段，许可随稳定版另行公布。" data-en="Distortion is released under AGPL-3.0 — network services from modified versions must open-source alike. Aphelion IdP and YoursGit are in team-use and early-preview stages; licenses will be announced with stable releases.">Distortion 以 AGPL-3.0 发布——修改与再分发的网络服务同样必须开源。Aphelion IdP 与 YoursGit 当前为团队自用与早期预览阶段，许可随稳定版另行公布。</p>
+          </div>
+          <div class="open-cell reveal d1">
+            <h3 data-zh="关于本页" data-en="About this page">关于本页</h3>
+            <p class="mono" data-zh-html="静态站 · 零框架 · 零构建 · 零第三方运行时依赖。<br>字体：Kumbh Sans / Noto Sans SC / IBM Plex Mono。<br>轨道动画求解开普勒方程 M = E − e·sinE（见 assets/main.js）。<br>全站唯一持续动画：三个天体。仅此而已。" data-en-html="Static site · zero frameworks · zero build · zero third-party runtime.<br>Type: Kumbh Sans / Noto Sans SC / IBM Plex Mono.<br>The orbit demo solves Kepler's equation M = E − e·sinE (see assets/main.js).<br>The only continuous animation on this site: three bodies. That's it.">静态站 · 零框架 · 零构建 · 零第三方运行时依赖。<br>字体：Kumbh Sans / Noto Sans SC / IBM Plex Mono。<br>轨道动画求解开普勒方程 M = E − e·sinE（见 assets/main.js）。<br>全站唯一持续动画：三个天体。仅此而已。</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ======================= 05 团队 ======================= -->
+    <section class="sec team" id="team">
+      <header class="sec-head reveal">
+        <p class="eyebrow"><em>05</em>· <span data-zh="团队 / CREW" data-en="Crew / CREW">团队 / CREW</span></p>
+        <h2 data-zh="一个人，一条产品线。" data-en="One person, one product line.">一个人，一条产品线。</h2>
+      </header>
+      <div class="crew reveal">
+        <p class="crew-name">ShorelineSama</p>
+        <p class="crew-role" data-zh="FOUNDER · 独立开发者" data-en="FOUNDER · Indie developer">FOUNDER · 独立开发者</p>
+        <p class="crew-bio" data-zh="从视觉系统、音频内核到身份协议，一个人承担设计、工程与审美决策。白天写 WASAPI 独占输出，晚上修 git 对象库；事故有记录，测试不撒谎。核心作品以 AGPL-3.0 回馈开源社区。" data-en="From visual systems and audio kernels to identity protocols, one person carries design, engineering and taste. Writes WASAPI exclusive output by day, repairs git object stores by night; incidents on record, tests don't lie. Core works give back to open source under AGPL-3.0.">从视觉系统、音频内核到身份协议，一个人承担设计、工程与审美决策。白天写 WASAPI 独占输出，晚上修 git 对象库；事故有记录，测试不撒谎。核心作品以 AGPL-3.0 回馈开源社区。</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======================= FOOTER ======================= -->
+  <footer class="foot">
+    <p class="foot-brand" aria-label="Open Aphelion"><b>Open Aphelion</b></p>
+    <p data-zh-html="DISTORTION 以 AGPL-3.0 开源<i>·</i>FIG.01 由开普勒方程驱动<i>·</i>你正在访问远日点" data-en-html="DISTORTION is open source under AGPL-3.0<i>·</i>FIG.01 is driven by Kepler's equation<i>·</i>You are at the aphelion">DISTORTION 以 AGPL-3.0 开源<i>·</i>字标的 o 是一条倾斜轨道，橙点即远日点<i>·</i>FIG.01 由开普勒方程驱动</p>
+    <p>&nbsp;</p>
+  </footer>
+
+  <script src="assets/main.js"></script>
+</body>
+</html>

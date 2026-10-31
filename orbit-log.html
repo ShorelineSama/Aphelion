@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-zh="轨道日志 — 在轨记录，含事故 · Open Aphelion" data-en="Orbit Log — Records, Incidents Included · Open Aphelion">轨道日志 — 在轨记录，含事故 · Open Aphelion</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <a class="brand" href="index.html" aria-label="Open Aphelion 首页">
+      <span class="brand-name">Open Aphelion</span>
+    </a>
+    <nav class="topnav" aria-label="主导航">
+      <div class="nav-item has-menu">
+        <button class="nav-btn" type="button" aria-expanded="false" aria-haspopup="true"><span data-zh="在轨作品" data-en="Works">在轨作品</span><svg class="chev" viewBox="0 0 10 10" focusable="false"><path d="M1.5 3 L5 6.8 L8.5 3" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <div class="menu" role="menu">
+          <div class="menu-col">
+            <p class="menu-title" data-zh="三件作品" data-en="Three works">三件作品</p>
+            <a href="distortion.html" role="menuitem"><span data-zh="Distortion" data-en="Distortion">Distortion</span><span class="sub" data-zh="本地 Hi-Fi 无损播放器" data-en="Local Hi-Fi lossless player">本地 Hi-Fi 无损播放器</span></a>
+            <a href="idp.html" role="menuitem"><span data-zh="Aphelion IdP" data-en="Aphelion IdP">Aphelion IdP</span><span class="sub" data-zh="统一身份认证 · 零依赖" data-en="Identity provider · zero deps">统一身份认证 · 零依赖</span></a>
+            <a href="yoursgit.html" role="menuitem"><span data-zh="YoursGit" data-en="YoursGit">YoursGit</span><span class="sub" data-zh="本地 Git 提交可视化" data-en="Local Git visualization">本地 Git 提交可视化</span></a>
+          </div>
+          <div class="menu-col">
+            <p class="menu-title" data-zh="速览" data-en="Overview">速览</p>
+            <a href="index.html#works" role="menuitem" data-zh="作品总览" data-en="Works overview">作品总览</a>
+            <a href="index.html#detail" role="menuitem" data-zh="夜航图" data-en="Night chart">夜航图</a>
+            <a href="orbit-log.html" role="menuitem" data-zh="轨道日志" data-en="Orbit log">轨道日志</a>
+          </div>
+        </div>
+      </div>
+      <a href="orbit-log.html" aria-current="page" data-zh="轨道日志" data-en="Orbit Log">轨道日志</a>
+      <div class="nav-item has-menu">
+        <button class="nav-btn" type="button" aria-expanded="false" aria-haspopup="true"><span data-zh="关于" data-en="About">关于</span><svg class="chev" viewBox="0 0 10 10" focusable="false"><path d="M1.5 3 L5 6.8 L8.5 3" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <div class="menu" role="menu">
+          <div class="menu-col">
+            <p class="menu-title" data-zh="工作室" data-en="Studio">工作室</p>
+            <a href="about.html#naming" role="menuitem" data-zh="命名宇宙" data-en="Naming">命名宇宙</a>
+            <a href="about.html#principles" role="menuitem" data-zh="工程原则" data-en="Principles">工程原则</a>
+            <a href="about.html#team-page" role="menuitem" data-zh="团队" data-en="Crew">团队</a>
+            <a href="about.html#colophon" role="menuitem" data-zh="关于本页" data-en="About this page">关于本页</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    </div>
+    <div class="topbar-right">
+
+      <button class="lang-btn" id="langBtn" type="button">EN</button>
+
+      <a class="nav-cta" href="distortion.html" data-zh="试试 Distortion" data-en="Try Distortion">试试 Distortion</a>
+
+    </div>
+
+  </header>
+
+  <main>
+    <section class="subhero">
+      <a class="backlink" href="index.html" data-zh="← 返回首页" data-en="← Back home">← 返回首页</a>
+      <p class="eyebrow"><em>ORBIT LOG</em>· <span data-zh="完整版" data-en="Full edition">完整版</span></p>
+      <h1 data-zh="轨道日志" data-en="Orbit Log">轨道日志</h1>
+      <p class="sub-cn" data-zh="全部日期取自仓库、文档与测试日志；不编造，不美化。" data-en="All dates from repos, docs and test logs; nothing invented, nothing varnished.">全部日期取自仓库、文档与测试日志；不编造，不美化。</p>
+      <blockquote class="panel-note" style="color:var(--ink); border-left-color:var(--accent); background:var(--card); margin-top:26px;">
+        「只做可逆操作；任何删除或从版本库移除的动作都需要明确确认，逐条列出。」
+        <cite>—— docs/project-layout.md · 仓库整理原则</cite>
+      </blockquote>
+    </section>
+
+    <section class="sec" id="fulllog">
+      <ol class="log">
+        <li class="reveal">
+          <span class="log-time">2026 · <span data-zh="秋" data-en="Autumn">秋</span></span>
+          <div class="log-body">
+            <b data-zh="Distortion 立项" data-en="Distortion begins">Distortion 立项</b>
+            <p data-zh="本地 Hi-Fi 无损播放器开始发育：多引擎音频内核、本地曲库、封面与歌词。早期提交历史后来灭失，确切起点成了谜——我们不编造它。" data-en="The local Hi-Fi lossless player starts growing: multi-engine audio, local library, covers and lyrics. Its early commit history was later lost — the exact beginning is a mystery, and we won't invent one.">本地 Hi-Fi 无损播放器开始发育：多引擎音频内核、本地曲库、封面与歌词。早期提交历史后来灭失，确切起点成了谜——我们不编造它。</p>
+          </div>
+        </li>
+        <li class="reveal">
+          <span class="log-time">2026-09-05</span>
+          <div class="log-body">
+            <b data-zh="520 项功能共识清单落盘" data-en="A 520-item feature list lands">520 项功能共识清单落盘</b>
+            <p data-zh="grilling 式设计拷问的产物：F001–F520，覆盖播放核心、音质 DSP、曲库元数据、歌词、生态接入等十二个方向，成为全页面重写与 Three.js 沉浸化改造的功能池。" data-en="Product of grilling-style design interrogation: F001–F520 across twelve directions — playback, DSP, library, lyrics, ecosystem — now the feature pool for the rewrite and Three.js immersion.">grilling 式设计拷问的产物：F001–F520，覆盖播放核心、音质 DSP、曲库元数据、歌词、生态接入等十二个方向，成为全页面重写与 Three.js 沉浸化改造的功能池。</p>
+          </div>
+        </li>
+        <li class="reveal">
+          <span class="log-time">2026-09-17</span>
+          <div class="log-body">
+            <b data-zh="git 历史灭失，当日重建" data-en="Git history lost, rebuilt same day">git 历史灭失，当日重建</b>
+            <p data-zh=".git 对象库损坏，全部历史灭失。当日重建仓库基线，从第 1 个提交重新开始——automix 位点补记、拍点网格回退路径那批 fix 提交成了新的创世记录。" data-en="The .git object store corrupted; all history lost. Baseline rebuilt the same day from commit #1 — the automix and beat-grid fixes became the new genesis record.">.git 对象库损坏，全部历史灭失。当日重建仓库基线，从第 1 个提交重新开始——automix 位点补记、拍点网格回退路径那批 fix 提交成了新的创世记录。</p>
+          </div>
+        </li>
+        <li class="reveal">
+          <span class="log-time">2026-10-18</span>
+          <div class="log-body">
+            <b data-zh="第一、二轮仓库整理" data-en="Repo hygiene, rounds one & two">第一、二轮仓库整理</b>
+            <p data-zh="日志、编译缓存、探针截图归档；17 个 Blender/GLB 脚本归入 scripts/blender；typecheck 双查 exit 0。全程未删除任何文件。" data-en="Logs, build caches and probe screenshots archived; 17 Blender/GLB scripts moved into scripts/blender; typecheck exit 0. Not a single file deleted.">日志、编译缓存、探针截图归档；17 个 Blender/GLB 脚本归入 scripts/blender；typecheck 双查 exit 0。全程未删除任何文件。</p>
+          </div>
+        </li>
+        <li class="reveal">
+          <span class="log-time">2026-10-29</span>
+          <div class="log-body">
+            <b data-zh="第三轮：误入库的 7.8 GB 出清" data-en="Round three: 7.8 GB of mistakes out">第三轮：误入库的 7.8 GB 出清</b>
+            <p data-zh="extensions/.build 里 1430 个跟踪文件（Chromium 用户配置与探针）移出版本库，磁盘原样保留；跟踪文件 2427 → 997；2667 项测试与 build 全绿。" data-en="1430 tracked files (Chromium profiles & probes) in extensions/.build left the index, untouched on disk; tracked files 2427 → 997; 2667 tests and build green.">extensions/.build 里 1430 个跟踪文件（Chromium 用户配置与探针）移出版本库，磁盘原样保留；跟踪文件 2427 → 997；2667 项测试与 build 全绿。</p>
+          </div>
+        </li>
+        <li class="reveal">
+          <span class="log-time">2026-10</span>
+          <div class="log-body">
+            <b data-zh="Aphelion IdP 发布" data-en="Aphelion IdP ships">Aphelion IdP 发布</b>
+            <p data-zh="OAuth2 授权码 + PKCE / OIDC 身份中枢上线：零第三方依赖，Tauri 86 MB 单包分发，端到端验证 17/17；内置平台与桌面双客户端，审计留痕 2000 条。" data-en="The OAuth2 code + PKCE / OIDC identity hub goes live: zero third-party deps, 86 MB Tauri package, 17/17 end-to-end; built-in platform & desktop clients, 2000-entry audit trail.">OAuth2 授权码 + PKCE / OIDC 身份中枢上线：零第三方依赖，Tauri 86 MB 单包分发，端到端验证 17/17；内置平台与桌面双客户端，审计留痕 2000 条。</p>
+          </div>
+        </li>
+        <li class="reveal">
+          <span class="log-time">2026-10-31</span>
+          <div class="log-body">
+            <b data-zh="第 496 个提交落下" data-en="Commit #496 lands">第 496 个提交落下</b>
+            <p data-zh="一句话生成歌单（本地语义解析 + 结果预览）、歌词编辑器、相似电台、心情标签、重复合并与互联同步组件；windows-smtc 兼容两套 Windows SDK。YoursGit v0.1.0 早期预览同步在轨调整。" data-en="Playlist-from-a-sentence (local parsing + preview), lyrics editor, similar-radio, mood tags, dedup & sync components; windows-smtc now builds against both Windows SDKs. YoursGit v0.1.0 early preview adjusting in orbit.">一句话生成歌单（本地语义解析 + 结果预览）、歌词编辑器、相似电台、心情标签、重复合并与互联同步组件；windows-smtc 兼容两套 Windows SDK。YoursGit v0.1.0 早期预览同步在轨调整。</p>
+          </div>
+        </li>
+        <li class="reveal">
+          <span class="log-time">2026-10-31</span>
+          <div class="log-body">
+            <b data-zh="本站上线" data-en="This site launches">本站上线</b>
+            <p data-zh="多页站点 + 中英双语 + 开普勒方程驱动的轨道演示动画。零框架、零构建、零第三方运行时依赖——与 Aphelion IdP 同一哲学。" data-en="Multi-page site + bilingual ZH/EN + a Kepler-driven orbit demo. Zero frameworks, zero build, zero third-party runtime — same philosophy as Aphelion IdP.">多页站点 + 中英双语 + 开普勒方程驱动的轨道演示动画。零框架、零构建、零第三方运行时依赖——与 Aphelion IdP 同一哲学。</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <p class="foot-brand" aria-label="Open Aphelion"><b>Open Aphelion</b></p>
+    <p data-zh-html="DISTORTION 以 AGPL-3.0 开源<i>·</i>FIG.01 由开普勒方程驱动" data-en-html="DISTORTION is open source under AGPL-3.0<i>·</i>FIG.01 is driven by Kepler's equation">DISTORTION 以 AGPL-3.0 开源<i>·</i>FIG.01 由开普勒方程驱动</p>
+    <p data-zh="你正在访问远日点。" data-en="You are at the aphelion.">你正在访问远日点。</p>
+  </footer>
+
+  <script src="assets/main.js"></script>
+</body>
+</html>

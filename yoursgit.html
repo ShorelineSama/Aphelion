@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-zh="YoursGit — 本地 Git 提交可视化 · Open Aphelion" data-en="YoursGit — Local Git Commit Visualization · Open Aphelion">YoursGit — 本地 Git 提交可视化 · Open Aphelion</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <a class="brand" href="index.html" aria-label="Open Aphelion 首页">
+      <span class="brand-name">Open Aphelion</span>
+    </a>
+    <nav class="topnav" aria-label="主导航">
+      <div class="nav-item has-menu">
+        <button class="nav-btn" type="button" aria-expanded="false" aria-haspopup="true"><span data-zh="在轨作品" data-en="Works">在轨作品</span><svg class="chev" viewBox="0 0 10 10" focusable="false"><path d="M1.5 3 L5 6.8 L8.5 3" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <div class="menu" role="menu">
+          <div class="menu-col">
+            <p class="menu-title" data-zh="三件作品" data-en="Three works">三件作品</p>
+            <a href="distortion.html" role="menuitem"><span data-zh="Distortion" data-en="Distortion">Distortion</span><span class="sub" data-zh="本地 Hi-Fi 无损播放器" data-en="Local Hi-Fi lossless player">本地 Hi-Fi 无损播放器</span></a>
+            <a href="idp.html" role="menuitem"><span data-zh="Aphelion IdP" data-en="Aphelion IdP">Aphelion IdP</span><span class="sub" data-zh="统一身份认证 · 零依赖" data-en="Identity provider · zero deps">统一身份认证 · 零依赖</span></a>
+            <a href="yoursgit.html" role="menuitem"><span data-zh="YoursGit" data-en="YoursGit">YoursGit</span><span class="sub" data-zh="本地 Git 提交可视化" data-en="Local Git visualization">本地 Git 提交可视化</span></a>
+          </div>
+          <div class="menu-col">
+            <p class="menu-title" data-zh="速览" data-en="Overview">速览</p>
+            <a href="index.html#works" role="menuitem" data-zh="作品总览" data-en="Works overview">作品总览</a>
+            <a href="index.html#detail" role="menuitem" data-zh="夜航图" data-en="Night chart">夜航图</a>
+            <a href="orbit-log.html" role="menuitem" data-zh="轨道日志" data-en="Orbit log">轨道日志</a>
+          </div>
+        </div>
+      </div>
+      <a href="orbit-log.html" data-zh="轨道日志" data-en="Orbit Log">轨道日志</a>
+      <div class="nav-item has-menu">
+        <button class="nav-btn" type="button" aria-expanded="false" aria-haspopup="true"><span data-zh="关于" data-en="About">关于</span><svg class="chev" viewBox="0 0 10 10" focusable="false"><path d="M1.5 3 L5 6.8 L8.5 3" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <div class="menu" role="menu">
+          <div class="menu-col">
+            <p class="menu-title" data-zh="工作室" data-en="Studio">工作室</p>
+            <a href="about.html#naming" role="menuitem" data-zh="命名宇宙" data-en="Naming">命名宇宙</a>
+            <a href="about.html#principles" role="menuitem" data-zh="工程原则" data-en="Principles">工程原则</a>
+            <a href="about.html#team-page" role="menuitem" data-zh="团队" data-en="Crew">团队</a>
+            <a href="about.html#colophon" role="menuitem" data-zh="关于本页" data-en="About this page">关于本页</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    </div>
+    <div class="topbar-right">
+
+      <button class="lang-btn" id="langBtn" type="button">EN</button>
+
+      <a class="nav-cta" href="distortion.html" data-zh="试试 Distortion" data-en="Try Distortion">试试 Distortion</a>
+
+    </div>
+
+  </header>
+
+  <main>
+    <section class="subhero">
+      <a class="backlink" href="index.html#works" data-zh="← 返回在轨作品" data-en="← Back to works">← 返回在轨作品</a>
+      <p class="eyebrow"><em>WORK 03</em>· v0.1.0 · EARLY PREVIEW</p>
+      <h1>YoursGit</h1>
+      <p class="sub-cn" data-zh="提交星图 · 本地 Git 提交可视化桌面应用" data-en="Commit chart · local Git commit visualization for the desktop">提交星图 · 本地 Git 提交可视化桌面应用</p>
+      <p class="lead" data-zh="把仓库的提交历史画出来。分支图布局引擎是自研的、有单测的；热力图、统计与时间线各占一个面板。数据完全在本地解析——一条 git log 都不会离开你的磁盘。名字里的主语是「你」：这是你的 Git。" data-en="Draw your repository's history. The branch-graph layout engine is in-house and unit-tested; heatmap, stats and timeline each get a panel. Everything parses locally — not a single git log leaves your disk. The subject of the name is you: this is your Git.">把仓库的提交历史画出来。分支图布局引擎是自研的、有单测的；热力图、统计与时间线各占一个面板。数据完全在本地解析——一条 git log 都不会离开你的磁盘。名字里的主语是「你」：这是你的 Git。</p>
+      <div class="chip-row">
+        <span class="chip">v0.1.0</span>
+        <span class="chip">Windows · Electron 31</span>
+        <span class="chip">React 18 · Vite 5</span>
+        <span class="chip" data-zh="全本地 · 零上传" data-en="Fully local · zero upload">全本地 · 零上传</span>
+      </div>
+    </section>
+
+    <section class="sec night" id="panels">
+      <header class="sec-head reveal">
+        <p class="eyebrow"><em>A</em>· <span data-zh="五个面板 / PANELS" data-en="Five panels / PANELS">五个面板 / PANELS</span></p>
+        <h2 data-zh="历史不止一种看法。" data-en="History has more than one view.">历史不止一种看法。</h2>
+      </header>
+      <div class="panel-grid">
+        <div class="pgroup">
+          <h4 data-zh="提交分支图" data-en="Commit graph">提交分支图</h4>
+          <ul>
+            <li data-zh="自研图布局引擎：分支线着色与合并走向" data-en="In-house layout engine: branch coloring & merge paths">自研图布局引擎：分支线着色与合并走向</li>
+            <li data-zh="布局算法独立单元测试（graphLayout.test）" data-en="Layout algorithm under dedicated unit tests">布局算法独立单元测试（graphLayout.test）</li>
+            <li data-zh="点选任意提交联动详情面板" data-en="Click any commit to drive the detail panel">点选任意提交联动详情面板</li>
+          </ul>
+        </div>
+        <div class="pgroup">
+          <h4 data-zh="贡献热力图" data-en="Heatmap">贡献热力图</h4>
+          <ul>
+            <li data-zh="按日聚合的提交强度视图" data-en="Per-day commit intensity view">按日聚合的提交强度视图</li>
+            <li data-zh="统计计算独立模块（stats.ts）+ 单测" data-en="Stats module (stats.ts) with tests">统计计算独立模块（stats.ts）+ 单测</li>
+            <li data-zh="与时间线联动定位密集期" data-en="Cross-linked with the timeline">与时间线联动定位密集期</li>
+          </ul>
+        </div>
+        <div class="pgroup">
+          <h4 data-zh="统计与时间线" data-en="Stats & timeline">统计与时间线</h4>
+          <ul>
+            <li data-zh="仓库总量、作者与频率分布" data-en="Totals, authors and frequency distribution">仓库总量、作者与频率分布</li>
+            <li data-zh="时间线面板纵览里程碑" data-en="Timeline panel for milestones">时间线面板纵览里程碑</li>
+            <li data-zh="格式化工具独立模块（format.ts）" data-en="Formatting utilities (format.ts)">格式化工具独立模块（format.ts）</li>
+          </ul>
+        </div>
+        <div class="pgroup">
+          <h4 data-zh="提交详情" data-en="Commit detail">提交详情</h4>
+          <ul>
+            <li data-zh="哈希、作者、时间与完整说明" data-en="Hash, author, time and full message">哈希、作者、时间与完整说明</li>
+            <li data-zh="大文本虚拟滚动不卡顿" data-en="Virtual scrolling stays smooth">大文本虚拟滚动不卡顿</li>
+            <li data-zh="mock 数据模式随时演示" data-en="Mock data mode for instant demos">mock 数据模式随时演示</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec night" id="engineering">
+      <header class="sec-head reveal">
+        <p class="eyebrow"><em>B</em>· <span data-zh="工程注记 / ENGINEERING" data-en="Engineering / ENGINEERING">工程注记 / ENGINEERING</span></p>
+        <h2 data-zh="可视化是表层，解析才是内核。" data-en="Visualization is the surface; parsing is the core.">可视化是表层，解析才是内核。</h2>
+      </header>
+      <div class="panel-grid two">
+        <div class="pgroup">
+          <h4 data-zh="本地解析" data-en="Local parsing">本地解析</h4>
+          <ul>
+            <li data-zh="gitApi 直读本地仓库，无守护进程、无上传" data-en="gitApi reads the local repo directly — no daemon, no upload">gitApi 直读本地仓库，无守护进程、无上传</li>
+            <li data-zh="解析器单测（parse.test）覆盖边界输入" data-en="Parser unit tests (parse.test) cover edge inputs">解析器单测（parse.test）覆盖边界输入</li>
+            <li data-zh="Electron 主进程承担 IO，渲染层只画图" data-en="Main process does IO; renderer only draws">Electron 主进程承担 IO，渲染层只画图</li>
+          </ul>
+        </div>
+        <div class="pgroup">
+          <h4 data-zh="性能" data-en="Performance">性能</h4>
+          <ul>
+            <li data-zh="万级提交虚拟滚动（useVirtual）" data-en="Virtual scrolling for 10k+ commits (useVirtual)">万级提交虚拟滚动（useVirtual）</li>
+            <li data-zh="图布局增量计算，滚动不掉帧" data-en="Incremental graph layout — no frame drops">图布局增量计算，滚动不掉帧</li>
+            <li data-zh="vitest 全量跑测试一条命令" data-en="One command: vitest run">vitest 全量跑测试一条命令</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec" id="roadmap">
+      <header class="sec-head reveal">
+        <p class="eyebrow"><em>C</em>· <span data-zh="路线状态 / STATUS" data-en="Status / STATUS">路线状态 / STATUS</span></p>
+        <h2 data-zh="v0.1.0，说实话的阶段。" data-en="v0.1.0 — the honest stage.">v0.1.0，说实话的阶段。</h2>
+      </header>
+      <p class="prose reveal" data-zh="YoursGit 处于早期预览：核心面板与解析管线可用，安装包为开发构建（electron-builder dist）。它排在 Distortion 与 Aphelion IdP 之后的轨道上，路线以提交历史为准——不画大饼，提交说话。" data-en="YoursGit is an early preview: core panels and the parsing pipeline work; installers are dev builds (electron-builder dist). It orbits behind Distortion and Aphelion IdP, and the roadmap is the commit history — no promises, commits talk.">YoursGit 处于早期预览：核心面板与解析管线可用，安装包为开发构建（electron-builder dist）。它排在 Distortion 与 Aphelion IdP 之后的轨道上，路线以提交历史为准——不画大饼，提交说话。</p>
+    </section>
+
+    <nav class="pn">
+      <a href="idp.html"><span class="pn-label" data-zh="← 上一件作品" data-en="← Previous work">← 上一件作品</span><span class="pn-name">Aphelion IdP</span></a>
+      <a class="next" href="distortion.html"><span class="pn-label" data-zh="下一件作品 →" data-en="Next work →">下一件作品 →</span><span class="pn-name">Distortion</span></a>
+    </nav>
+  </main>
+
+  <footer class="foot">
+    <p class="foot-brand" aria-label="Open Aphelion"><b>Open Aphelion</b></p>
+    <p data-zh-html="DISTORTION 以 AGPL-3.0 开源<i>·</i>FIG.01 由开普勒方程驱动" data-en-html="DISTORTION is open source under AGPL-3.0<i>·</i>FIG.01 is driven by Kepler's equation">DISTORTION 以 AGPL-3.0 开源<i>·</i>FIG.01 由开普勒方程驱动</p>
+    <p data-zh="你正在访问远日点。" data-en="You are at the aphelion.">你正在访问远日点。</p>
+  </footer>
+
+  <script src="assets/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="14" fill="#faf9f5"/>
+  <!-- 轻椭圆轨道（近乎圆但确实偏心）+ 长轴远端顶点 = 远日点 -->
+  <ellipse cx="32" cy="32" rx="23" ry="21" fill="none" stroke="#1f1d1a" stroke-width="3.6" transform="rotate(-30 32 32)"/>
+  <circle cx="51.9" cy="20.5" r="7" fill="#d97757"/>
+</svg>

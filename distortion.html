@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-zh="Distortion — 本地 Hi-Fi 无损音乐播放器 · Open Aphelion" data-en="Distortion — Local Hi-Fi Lossless Music Player · Open Aphelion">Distortion — 本地 Hi-Fi 无损音乐播放器 · Open Aphelion</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <a class="brand" href="index.html" aria-label="Open Aphelion 首页">
+      <span class="brand-name">Open Aphelion</span>
+    </a>
+    <nav class="topnav" aria-label="主导航">
+      <div class="nav-item has-menu">
+        <button class="nav-btn" type="button" aria-expanded="false" aria-haspopup="true"><span data-zh="在轨作品" data-en="Works">在轨作品</span><svg class="chev" viewBox="0 0 10 10" focusable="false"><path d="M1.5 3 L5 6.8 L8.5 3" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <div class="menu" role="menu">
+          <div class="menu-col">
+            <p class="menu-title" data-zh="三件作品" data-en="Three works">三件作品</p>
+            <a href="distortion.html" role="menuitem"><span data-zh="Distortion" data-en="Distortion">Distortion</span><span class="sub" data-zh="本地 Hi-Fi 无损播放器" data-en="Local Hi-Fi lossless player">本地 Hi-Fi 无损播放器</span></a>
+            <a href="idp.html" role="menuitem"><span data-zh="Aphelion IdP" data-en="Aphelion IdP">Aphelion IdP</span><span class="sub" data-zh="统一身份认证 · 零依赖" data-en="Identity provider · zero deps">统一身份认证 · 零依赖</span></a>
+            <a href="yoursgit.html" role="menuitem"><span data-zh="YoursGit" data-en="YoursGit">YoursGit</span><span class="sub" data-zh="本地 Git 提交可视化" data-en="Local Git visualization">本地 Git 提交可视化</span></a>
+          </div>
+          <div class="menu-col">
+            <p class="menu-title" data-zh="速览" data-en="Overview">速览</p>
+            <a href="index.html#works" role="menuitem" data-zh="作品总览" data-en="Works overview">作品总览</a>
+            <a href="index.html#detail" role="menuitem" data-zh="夜航图" data-en="Night chart">夜航图</a>
+            <a href="orbit-log.html" role="menuitem" data-zh="轨道日志" data-en="Orbit log">轨道日志</a>
+          </div>
+        </div>
+      </div>
+      <a href="orbit-log.html" data-zh="轨道日志" data-en="Orbit Log">轨道日志</a>
+      <div class="nav-item has-menu">
+        <button class="nav-btn" type="button" aria-expanded="false" aria-haspopup="true"><span data-zh="关于" data-en="About">关于</span><svg class="chev" viewBox="0 0 10 10" focusable="false"><path d="M1.5 3 L5 6.8 L8.5 3" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <div class="menu" role="menu">
+          <div class="menu-col">
+            <p class="menu-title" data-zh="工作室" data-en="Studio">工作室</p>
+            <a href="about.html#naming" role="menuitem" data-zh="命名宇宙" data-en="Naming">命名宇宙</a>
+            <a href="about.html#principles" role="menuitem" data-zh="工程原则" data-en="Principles">工程原则</a>
+            <a href="about.html#team-page" role="menuitem" data-zh="团队" data-en="Crew">团队</a>
+            <a href="about.html#colophon" role="menuitem" data-zh="关于本页" data-en="About this page">关于本页</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    </div>
+    <div class="topbar-right">
+
+      <button class="lang-btn" id="langBtn" type="button">EN</button>
+
+      <a class="nav-cta" href="distortion.html" data-zh="试试 Distortion" data-en="Try Distortion">试试 Distortion</a>
+
+    </div>
+
+  </header>
+
+  <main>
+    <section class="subhero">
+      <a class="backlink" href="index.html#works" data-zh="← 返回在轨作品" data-en="← Back to works">← 返回在轨作品</a>
+      <p class="eyebrow"><em>WORK 01</em>· v1.0 · STABLE</p>
+      <h1>Distortion</h1>
+      <p class="sub-cn" data-zh="失真 · Aurorether Music NEXT · 本地 Hi-Fi 无损音乐播放器" data-en="distortion · Aurorether Music NEXT · local Hi-Fi lossless music player">失真 · Aurorether Music NEXT · 本地 Hi-Fi 无损音乐播放器</p>
+      <p class="lead" data-zh="以本地曲库为中心的无损播放器：你的 FLAC、你的 DSD、你的封面与歌词，全部留在你的磁盘上。音频内核追求位完美路径，视觉层追求逐字逐帧的沉浸，扩展系统把剩下的可能性交给社区。" data-en="A lossless player centered on your local library: your FLAC, your DSD, your covers and lyrics stay on your disk. The audio kernel pursues a bit-perfect path; the visual layer pursues immersion word by word; the extension system hands the rest to the community.">以本地曲库为中心的无损播放器：你的 FLAC、你的 DSD、你的封面与歌词，全部留在你的磁盘上。音频内核追求位完美路径，视觉层追求逐字逐帧的沉浸，扩展系统把剩下的可能性交给社区。</p>
+      <div class="chip-row">
+        <span class="chip">Windows NSIS</span>
+        <span class="chip">Android APK</span>
+        <span class="chip">AGPL-3.0</span>
+        <span class="chip">Electron 43 · React 19</span>
+        <span class="chip">ONNX Runtime</span>
+        <span class="chip">2667 tests</span>
+      </div>
+    </section>
+
+    <section class="sec night" id="features">
+      <header class="sec-head reveal">
+        <p class="eyebrow"><em>A</em>· <span data-zh="能力全景 / CAPABILITIES" data-en="Capabilities / CAPABILITIES">能力全景 / CAPABILITIES</span></p>
+        <h2 data-zh="八个方向，一条内核。" data-en="Eight directions, one kernel.">八个方向，一条内核。</h2>
+      </header>
+      <div class="panel-grid">
+        <div class="pgroup">
+          <h4 data-zh="播放核心" data-en="Playback core">播放核心</h4>
+          <ul>
+            <li data-zh="四模式播放 · 0.75–2.0 变速 · 变速不变调" data-en="Four play modes · 0.75–2.0 speed · pitch-locked">四模式播放 · 0.75–2.0 变速 · 变速不变调</li>
+            <li data-zh="A-B 段落循环 · 章节跳转 · 跳过片头片尾" data-en="A-B loop · chapters · intro/outro skip">A-B 段落循环 · 章节跳转 · 跳过片头片尾</li>
+            <li data-zh="队列与来源分离 · 下一首插队" data-en="Queue vs source separation · play-next">队列与来源分离 · 下一首插队</li>
+            <li data-zh="崩溃快照恢复 · 播放位置记忆" data-en="Crash-snapshot recovery · position memory">崩溃快照恢复 · 播放位置记忆</li>
+          </ul>
+        </div>
+        <div class="pgroup">
+          <h4 data-zh="音质 · DSP" data-en="Audio & DSP">音质 · DSP</h4>
+          <ul>
+            <li data-zh="多音频引擎自动协商（HTML5 / 原生）" data-en="Multi-engine auto negotiation (HTML5 / native)">多音频引擎自动协商（HTML5 / 原生）</li>
+            <li data-zh="WASAPI 独占 · DSD DoP 直通 · 位完美路径" data-en="WASAPI exclusive · DSD DoP · bit-perfect path">WASAPI 独占 · DSD DoP 直通 · 位完美路径</li>
+            <li data-zh="10 段 EQ · ReplayGain · 响度标准化 LUFS" data-en="10-band EQ · ReplayGain · LUFS normalization">10 段 EQ · ReplayGain · 响度标准化 LUFS</li>
+            <li data-zh="空间音频 HRTF · 动态响度压缩（夜间模式）" data-en="Spatial HRTF · dynamic loudness (night mode)">空间音频 HRTF · 动态响度压缩（夜间模式）</li>
+          </ul>
+        </div>
+        <div class="pgroup">
+          <h4 data-zh="曲库与元数据" data-en="Library & metadata">曲库与元数据</h4>
+          <ul>
+            <li data-zh="文件夹扫描 · mtime 增量 · 监视实时变更" data-en="Folder scan · mtime deltas · live watching">文件夹扫描 · mtime 增量 · 监视实时变更</li>
+            <li data-zh="重复检测（标题+时长+指纹）· 批量编辑器" data-en="Duplicate detection · batch metadata editor">重复检测（标题+时长+指纹）· 批量编辑器</li>
+            <li data-zh="智能播放列表规则引擎 · 评分与爱心双体系" data-en="Smart playlist rules · rating & heart systems">智能播放列表规则引擎 · 评分与爱心双体系</li>
+            <li data-zh="GBK / Shift-JIS 标签乱码修复" data-en="GBK / Shift-JIS tag repair">GBK / Shift-JIS 标签乱码修复</li>
+          </ul>
+        </div>
+        <div class="pgroup">
+          <h4 data-zh="歌词系统" data-en="Lyrics">歌词系统</h4>
+          <ul>
+            <li data-zh="Apple Music 风格逐字歌词（@applemusic-like-lyrics）" data-en="Apple-Music-style word sync (applemusic-like-lyrics)">Apple Music 风格逐字歌词（@applemusic-like-lyrics）</li>
+            <li data-zh="TTML 支持 · 歌词编辑器" data-en="TTML support · lyrics editor">TTML 支持 · 歌词编辑器</li>
+            <li data-zh="桌面歌词 · 歌词可视化插件位" data-en="Desktop lyrics · visualizer plugin slots">桌面歌词 · 歌词可视化插件位</li>
+            <li data-zh="Three.js 沉浸化层" data-en="Three.js immersion layer">Three.js 沉浸化层</li>
+          </ul>
+        </div>
+        <div class="pgroup">
+          <h4 data-zh="生态与投屏" data-en="Ecosystem & casting">生态与投屏</h4>
+          <ul>
+            <li data-zh="DLNA 投屏（dlnacasts）· MJPEG 屏幕投射" data-en="DLNA casting (dlnacasts) · MJPEG projection">DLNA 投屏（dlnacasts）· MJPEG 屏幕投射</li>
+            <li data-zh="蓝牙输出路由 · SMTC 系统媒体控制" data-en="Bluetooth routing · SMTC media control">蓝牙输出路由 · SMTC 系统媒体控制</li>
+            <li data-zh="B 站视频与合集导入（可选 MV）" data-en="Bilibili video & collection import (optional MV)">B 站视频与合集导入（可选 MV）</li>
+            <li data-zh="WebDAV / NAS · 流媒体曲源接入" data-en="WebDAV / NAS · streaming sources">WebDAV / NAS · 流媒体曲源接入</li>
+          </ul>
+        </div>
+        <div class="pgroup">
+          <h4 data-zh="智能" data-en="Intelligence">智能</h4>
+          <ul>
+            <li data-zh="ONNX beat_this 节拍检测 · 自相关 DSP" data-en="ONNX beat_this detection · autocorrelation DSP">ONNX beat_this 节拍检测 · 自相关 DSP</li>
+            <li data-zh="自动混音引擎 · song-links 引擎" data-en="Auto-mix engine · song-links engine">自动混音引擎 · song-links 引擎</li>
+            <li data-zh="一句话生成歌单（本地语义解析）" data-en="Playlist from a sentence (local parsing)">一句话生成歌单（本地语义解析）</li>
+            <li data-zh="本地大模型（node-llama-cpp）" data-en="On-device LLM (node-llama-cpp)">本地大模型（node-llama-cpp）</li>
+          </ul>
+        </div>
+        <div class="pgroup">
+          <h4 data-zh="效率" data-en="Efficiency">效率</h4>
+          <ul>
+            <li data-zh="19 个全局快捷键" data-en="19 global shortcuts">19 个全局快捷键</li>
+            <li data-zh="Run 风格 Ctrl+K 命令终端" data-en="Run-style Ctrl+K command palette">Run 风格 Ctrl+K 命令终端</li>
+            <li data-zh="外观实验室 50+ 项设置" data-en="Appearance lab, 50+ settings">外观实验室 50+ 项设置</li>
+            <li data-zh="曲库工具与互联设置分区" data-en="Library tools & sync settings sections">曲库工具与互联设置分区</li>
+          </ul>
+        </div>
+        <div class="pgroup">
+          <h4 data-zh="移动端" data-en="Mobile">移动端</h4>
+          <ul>
+            <li data-zh="Capacitor 8 Android 壳工程" data-en="Capacitor 8 Android shell">Capacitor 8 Android 壳工程</li>
+            <li data-zh="APK 构建管线（build:apk / build:all）" data-en="APK build pipeline (build:apk / build:all)">APK 构建管线（build:apk / build:all）</li>
+            <li data-zh="与桌面端共享渲染层" data-en="Shared renderer with desktop">与桌面端共享渲染层</li>
+            <li data-zh="离线优先的曲库同步" data-en="Offline-first library sync">离线优先的曲库同步</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec night" id="plugins">
+      <header class="sec-head reveal">
+        <p class="eyebrow"><em>B</em>· <span data-zh="插件系统 / EXTENSIONS" data-en="Extensions / EXTENSIONS">插件系统 / EXTENSIONS</span></p>
+        <h2 data-zh="可能性交给社区，权限写进清单。" data-en="Possibility to the community, permissions in the manifest.">可能性交给社区，权限写进清单。</h2>
+      </header>
+      <div class="panel-grid two">
+        <div class="pgroup">
+          <h4 data-zh="机制" data-en="Mechanism">机制</h4>
+          <ul>
+            <li data-zh="ZIP 扩展包 · manifest.json 清单 · apiVersion 协商" data-en="ZIP packs · manifest.json · apiVersion negotiation">ZIP 扩展包 · manifest.json 清单 · apiVersion 协商</li>
+            <li data-zh="宿主 esbuild 管线即时编译 TS/TSX 源码" data-en="Host esbuild compiles TS/TSX on the fly">宿主 esbuild 管线即时编译 TS/TSX 源码</li>
+            <li data-zh="三类扩展：lyrics-visualizer / runtime-provider / appearance" data-en="Three types: lyrics-visualizer / runtime-provider / appearance">三类扩展：lyrics-visualizer / runtime-provider / appearance</li>
+            <li data-zh="permissions 显式声明 · 路径穿越与软链拦截" data-en="Explicit permissions · path traversal & symlink blocked">permissions 显式声明 · 路径穿越与软链拦截</li>
+          </ul>
+        </div>
+        <div class="pgroup">
+          <h4 data-zh="分发" data-en="Distribution">分发</h4>
+          <ul>
+            <li data-zh="自包含打包：node_modules 随 ZIP 分发，目标机可离线" data-en="Self-contained: node_modules shipped in ZIP, offline install">自包含打包：node_modules 随 ZIP 分发，目标机可离线</li>
+            <li data-zh="npm run pack:ext 一条命令出包" data-en="One command: npm run pack:ext">npm run pack:ext 一条命令出包</li>
+            <li data-zh="react/zustand 等走宿主实例，避免双份" data-en="react/zustand resolved from host — no duplicates">react/zustand 等走宿主实例，避免双份</li>
+            <li data-zh="UI 开关：hideTitleBar / hideConfigPanel 等五项" data-en="UI flags: hideTitleBar / hideConfigPanel and more">UI 开关：hideTitleBar / hideConfigPanel 等五项</li>
+          </ul>
+        </div>
+      </div>
+      <blockquote class="panel-note">
+        「扩展包完全自包含，运行时由宿主 esbuild 管线从源码即时编译。」
+        <cite>—— EXTENSIONS.md · Distortion 扩展标准</cite>
+      </blockquote>
+    </section>
+
+    <section class="sec" id="visual">
+      <header class="sec-head reveal">
+        <p class="eyebrow"><em>C</em>· <span data-zh="视觉系统 / VISUAL SYSTEM" data-en="Visual system / VISUAL SYSTEM">视觉系统 / VISUAL SYSTEM</span></p>
+        <h2 data-zh="夜色编辑。" data-en="Editorial Nocturne.">夜色编辑。</h2>
+      </header>
+      <p class="prose reveal" data-zh="Distortion 的界面建立在一套自建的视觉语言上：近黑底色的五档表面阶梯（不用阴影也能读出层次）、眉标+大标题+副标题的三级编辑化排版、随当前封面动态推导的主色（OKLCH 钳位明度保证对比度），以及克制的动效纪律——rise ≤ 300ms，hover 抬升 ≤ 240ms，尊重 prefers-reduced-motion。" data-en="The UI is built on an in-house visual language: a five-step near-black surface ladder (hierarchy without shadows), editorial three-level typography, an accent color derived live from the current cover (OKLCH lightness-clamped for contrast), and restrained motion — rise ≤ 300ms, hover lift ≤ 240ms, prefers-reduced-motion respected.">Distortion 的界面建立在一套自建的视觉语言上：近黑底色的五档表面阶梯（不用阴影也能读出层次）、眉标+大标题+副标题的三级编辑化排版、随当前封面动态推导的主色（OKLCH 钳位明度保证对比度），以及克制的动效纪律——rise ≤ 300ms，hover 抬升 ≤ 240ms，尊重 prefers-reduced-motion。</p>
+      <blockquote class="panel-note" style="color:var(--ink); border-left-color:var(--accent); background:var(--card);">
+        「编辑化的本质是层级，不是装饰。」
+        <cite>——《视觉系统 · 夜色编辑》</cite>
+      </blockquote>
+    </section>
+
+    <section class="sec" id="get">
+      <header class="sec-head reveal">
+        <p class="eyebrow"><em>D</em>· <span data-zh="获取 / GET IT" data-en="Get it / GET IT">获取 / GET IT</span></p>
+        <h2 data-zh="两个安装包，一条许可。" data-en="Two installers, one license.">两个安装包，一条许可。</h2>
+      </header>
+      <div class="getbox">
+        <div class="getcell reveal">
+          <h3>Windows</h3>
+          <p data-zh="NSIS 安装包（electron-builder），含 FFmpeg 与 windows-smtc 原生模块，支持 SMTC 与 WASAPI 独占输出。" data-en="NSIS installer (electron-builder) with FFmpeg and the windows-smtc native module; SMTC and WASAPI exclusive output supported.">NSIS 安装包（electron-builder），含 FFmpeg 与 windows-smtc 原生模块，支持 SMTC 与 WASAPI 独占输出。</p>
+          <p class="mono" style="margin-top:10px;">npm run build:exe</p>
+        </div>
+        <div class="getcell reveal d1">
+          <h3>Android</h3>
+          <p data-zh="Capacitor 8 壳工程打包 APK，与桌面端共享渲染层；离线曲库优先。" data-en="APK via the Capacitor 8 shell, sharing the desktop renderer; offline library first.">Capacitor 8 壳工程打包 APK，与桌面端共享渲染层；离线曲库优先。</p>
+          <p class="mono" style="margin-top:10px;">npm run build:apk</p>
+        </div>
+      </div>
+    </section>
+
+    <nav class="pn">
+      <a href="yoursgit.html"><span class="pn-label" data-zh="← 上一件作品" data-en="← Previous work">← 上一件作品</span><span class="pn-name">YoursGit</span></a>
+      <a class="next" href="idp.html"><span class="pn-label" data-zh="下一件作品 →" data-en="Next work →">下一件作品 →</span><span class="pn-name">Aphelion IdP</span></a>
+    </nav>
+  </main>
+
+  <footer class="foot">
+    <p class="foot-brand" aria-label="Open Aphelion"><b>Open Aphelion</b></p>
+    <p data-zh-html="DISTORTION 以 AGPL-3.0 开源<i>·</i>FIG.01 由开普勒方程驱动" data-en-html="DISTORTION is open source under AGPL-3.0<i>·</i>FIG.01 is driven by Kepler's equation">DISTORTION 以 AGPL-3.0 开源<i>·</i>FIG.01 由开普勒方程驱动</p>
+    <p data-zh="你正在访问远日点。" data-en="You are at the aphelion.">你正在访问远日点。</p>
+  </footer>
+
+  <script src="assets/main.js"></script>
+</body>
+</html>

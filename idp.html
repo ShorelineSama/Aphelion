@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-zh="Aphelion IdP — 统一身份认证平台 · Open Aphelion" data-en="Aphelion IdP — Unified Identity Provider · Open Aphelion">Aphelion IdP — 统一身份认证平台 · Open Aphelion</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <a class="brand" href="index.html" aria-label="Open Aphelion 首页">
+      <span class="brand-name">Open Aphelion</span>
+    </a>
+    <nav class="topnav" aria-label="主导航">
+      <div class="nav-item has-menu">
+        <button class="nav-btn" type="button" aria-expanded="false" aria-haspopup="true"><span data-zh="在轨作品" data-en="Works">在轨作品</span><svg class="chev" viewBox="0 0 10 10" focusable="false"><path d="M1.5 3 L5 6.8 L8.5 3" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <div class="menu" role="menu">
+          <div class="menu-col">
+            <p class="menu-title" data-zh="三件作品" data-en="Three works">三件作品</p>
+            <a href="distortion.html" role="menuitem"><span data-zh="Distortion" data-en="Distortion">Distortion</span><span class="sub" data-zh="本地 Hi-Fi 无损播放器" data-en="Local Hi-Fi lossless player">本地 Hi-Fi 无损播放器</span></a>
+            <a href="idp.html" role="menuitem"><span data-zh="Aphelion IdP" data-en="Aphelion IdP">Aphelion IdP</span><span class="sub" data-zh="统一身份认证 · 零依赖" data-en="Identity provider · zero deps">统一身份认证 · 零依赖</span></a>
+            <a href="yoursgit.html" role="menuitem"><span data-zh="YoursGit" data-en="YoursGit">YoursGit</span><span class="sub" data-zh="本地 Git 提交可视化" data-en="Local Git visualization">本地 Git 提交可视化</span></a>
+          </div>
+          <div class="menu-col">
+            <p class="menu-title" data-zh="速览" data-en="Overview">速览</p>
+            <a href="index.html#works" role="menuitem" data-zh="作品总览" data-en="Works overview">作品总览</a>
+            <a href="index.html#detail" role="menuitem" data-zh="夜航图" data-en="Night chart">夜航图</a>
+            <a href="orbit-log.html" role="menuitem" data-zh="轨道日志" data-en="Orbit log">轨道日志</a>
+          </div>
+        </div>
+      </div>
+      <a href="orbit-log.html" data-zh="轨道日志" data-en="Orbit Log">轨道日志</a>
+      <div class="nav-item has-menu">
+        <button class="nav-btn" type="button" aria-expanded="false" aria-haspopup="true"><span data-zh="关于" data-en="About">关于</span><svg class="chev" viewBox="0 0 10 10" focusable="false"><path d="M1.5 3 L5 6.8 L8.5 3" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <div class="menu" role="menu">
+          <div class="menu-col">
+            <p class="menu-title" data-zh="工作室" data-en="Studio">工作室</p>
+            <a href="about.html#naming" role="menuitem" data-zh="命名宇宙" data-en="Naming">命名宇宙</a>
+            <a href="about.html#principles" role="menuitem" data-zh="工程原则" data-en="Principles">工程原则</a>
+            <a href="about.html#team-page" role="menuitem" data-zh="团队" data-en="Crew">团队</a>
+            <a href="about.html#colophon" role="menuitem" data-zh="关于本页" data-en="About this page">关于本页</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    </div>
+    <div class="topbar-right">
+
+      <button class="lang-btn" id="langBtn" type="button">EN</button>
+
+      <a class="nav-cta" href="distortion.html" data-zh="试试 Distortion" data-en="Try Distortion">试试 Distortion</a>
+
+    </div>
+
+  </header>
+
+  <main>
+    <section class="subhero">
+      <a class="backlink" href="index.html#works" data-zh="← 返回在轨作品" data-en="← Back to works">← 返回在轨作品</a>
+      <p class="eyebrow"><em>WORK 02</em>· v1 · SELF-HOSTED</p>
+      <h1>Aphelion IdP</h1>
+      <p class="sub-cn" data-zh="统一身份认证平台 · OAuth2 授权码 + PKCE / OIDC · 零第三方运行时依赖" data-en="Unified identity provider · OAuth2 authorization code + PKCE / OIDC · zero third-party runtime deps">统一身份认证平台 · OAuth2 授权码 + PKCE / OIDC · 零第三方运行时依赖</p>
+      <p class="lead" data-zh="管理和授权 Aphelion 账号的独立身份服务：给 Distortion 等客户端应用提供标准 OIDC 登录，账号与应用授权统一在一个平台里管理。零依赖不是口号——server 只用 Node 内置模块（http / crypto / fs），npm install 都省了。" data-en="A standalone identity service managing Aphelion accounts: standard OIDC login for Distortion and other clients, with accounts and app authorizations managed in one place. Zero deps is not a slogan — the server uses only Node built-ins (http / crypto / fs); even npm install is unnecessary.">管理和授权 Aphelion 账号的独立身份服务：给 Distortion 等客户端应用提供标准 OIDC 登录，账号与应用授权统一在一个平台里管理。零依赖不是口号——server 只用 Node 内置模块（http / crypto / fs），npm install 都省了。</p>
+      <div class="chip-row">
+        <span class="chip">OAuth2 + PKCE</span>
+        <span class="chip">OIDC</span>
+        <span class="chip">0 third-party deps</span>
+        <span class="chip">Tauri 86 MB</span>
+        <span class="chip">Node SEA 83 MB</span>
+        <span class="chip">verify 17/17</span>
+      </div>
+    </section>
+
+    <section class="sec night" id="endpoints">
+      <header class="sec-head reveal">
+        <p class="eyebrow"><em>A</em>· <span data-zh="标准端点 / ENDPOINTS" data-en="Endpoints / ENDPOINTS">标准端点 / ENDPOINTS</span></p>
+        <h2 data-zh="该有的端点一个不少。" data-en="Every endpoint you'd expect.">该有的端点一个不少。</h2>
+      </header>
+      <div class="panel-grid two">
+        <div class="pgroup">
+          <h4>OAuth2 / OIDC</h4>
+          <ul class="mono-list">
+            <li>GET&nbsp; /oauth/authorize</li>
+            <li>POST /oauth/token</li>
+            <li>GET&nbsp; /oauth/userinfo</li>
+            <li>POST /oauth/revoke</li>
+            <li>GET&nbsp; /.well-known/openid-configuration</li>
+          </ul>
+        </div>
+        <div class="pgroup">
+          <h4 data-zh="平台" data-en="Platform">平台</h4>
+          <ul class="mono-list">
+            <li data-zh="控制台 · http://127.0.0.1:7788/" data-en="Console · http://127.0.0.1:7788/">控制台 · http://127.0.0.1:7788/</li>
+            <li>GET&nbsp; /health</li>
+            <li data-zh="scope：openid · profile · email · apps" data-en="scopes: openid · profile · email · apps">scope：openid · profile · email · apps</li>
+            <li data-zh="id_token：HS256 签名 JWT" data-en="id_token: HS256-signed JWT">id_token：HS256 签名 JWT</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec" id="flow">
+      <header class="sec-head reveal">
+        <p class="eyebrow"><em>B</em>· <span data-zh="接入 / QUICK START" data-en="Quick start / QUICK START">接入 / QUICK START</span></p>
+        <h2 data-zh="标准授权码 + PKCE，十分钟接入。" data-en="Standard code + PKCE — integrate in minutes.">标准授权码 + PKCE，十分钟接入。</h2>
+      </header>
+      <pre class="codeblock"><span class="cm"># 1 · 登记应用后，引导用户浏览器打开</span>
+GET  /oauth/authorize?client_id=...&amp;redirect_uri=...&amp;response_type=code
+     &amp;scope=openid profile&amp;state=...&amp;code_challenge=...&amp;code_challenge_method=S256
+<span class="cm"># → 登录 / 同意 → 302 redirect_uri?code=...&amp;state=...</span>
+
+<span class="cm"># 2 · 后端换令牌（PKCE：code_verifier）</span>
+POST /oauth/token
+     grant_type=authorization_code &amp; code=... &amp; redirect_uri=...
+     &amp; client_id=... &amp; code_verifier=...
+
+<span class="cm"># 3 · 携带访问令牌取用户信息 · 刷新 · 吊销</span>
+GET  /oauth/userinfo   <span class="hl">Authorization: Bearer</span> &lt;access_token&gt;
+POST /oauth/token      grant_type=refresh_token &amp; refresh_token=...
+POST /oauth/revoke     token=...</pre>
+      <p class="prose reveal" data-zh="Distortion 桌面端的「账号面板 → Aphelion 账号」就是这样接入的：点击后系统浏览器打开授权页，登录并同意后回到播放器，应用内不需要填任何密钥。登录态保存在 userData/aphelion-auth.json——主进程持有，渲染进程拿不到令牌。" data-en="That is exactly how Distortion's desktop account panel integrates: the system browser opens the authorization page, you sign in and consent, and you're back in the player — no secrets typed into the app. The session lives in userData/aphelion-auth.json, held by the main process; renderers never see tokens.">Distortion 桌面端的「账号面板 → Aphelion 账号」就是这样接入的：点击后系统浏览器打开授权页，登录并同意后回到播放器，应用内不需要填任何密钥。登录态保存在 userData/aphelion-auth.json——主进程持有，渲染进程拿不到令牌。</p>
+    </section>
+
+    <section class="sec night" id="security">
+      <header class="sec-head reveal">
+        <p class="eyebrow"><em>C</em>· <span data-zh="安全设计 / SECURITY" data-en="Security / SECURITY">安全设计 / SECURITY</span></p>
+        <h2 data-zh="每一条都是防线，不是装饰。" data-en="Every line is a defense, not decoration.">每一条都是防线，不是装饰。</h2>
+      </header>
+      <div class="panel-grid">
+        <div class="pgroup">
+          <h4 data-zh="凭据" data-en="Credentials">凭据</h4>
+          <ul>
+            <li data-zh="scrypt 随机盐 64 字节 · timingSafeEqual 比对" data-en="scrypt, random 64-byte salt · timingSafeEqual">scrypt 随机盐 64 字节 · timingSafeEqual 比对</li>
+            <li data-zh="管理员会话 HttpOnly + SameSite=Lax · 12 小时" data-en="Admin sessions HttpOnly + SameSite=Lax · 12h">管理员会话 HttpOnly + SameSite=Lax · 12 小时</li>
+            <li data-zh="停用账号或改密 → 立即吊销全部会话与令牌" data-en="Disable or reset → all sessions & tokens revoked now">停用账号或改密 → 立即吊销全部会话与令牌</li>
+          </ul>
+        </div>
+        <div class="pgroup">
+          <h4 data-zh="令牌" data-en="Tokens">令牌</h4>
+          <ul>
+            <li data-zh="授权码 5 分钟有效 · 一次性 · 绑定 client 与回调" data-en="Codes: 5 min · single-use · bound to client+redirect">授权码 5 分钟有效 · 一次性 · 绑定 client 与回调</li>
+            <li data-zh="refresh_token 轮换，旧令牌立即失效" data-en="refresh_token rotation — old ones die instantly">refresh_token 轮换，旧令牌立即失效</li>
+            <li data-zh="PKCE 强制 S256" data-en="PKCE with S256 enforced">PKCE 强制 S256</li>
+          </ul>
+        </div>
+        <div class="pgroup">
+          <h4 data-zh="边界" data-en="Boundaries">边界</h4>
+          <ul>
+            <li data-zh="回调地址按登记值精确匹配，未登记直接 400" data-en="Redirects matched exactly; unregistered → 400">回调地址按登记值精确匹配，未登记直接 400</li>
+            <li data-zh="内置客户端不可删除，防止误伤登录链路" data-en="Built-in clients cannot be deleted">内置客户端不可删除，防止误伤登录链路</li>
+            <li data-zh="面向本机与内网；公网需 HTTPS、限流与锁定（未内置，不放）" data-en="For localhost & LAN; public exposure needs HTTPS, rate limiting and lockout (not built, so not shipped)">面向本机与内网；公网需 HTTPS、限流与锁定（未内置，不放）</li>
+          </ul>
+        </div>
+        <div class="pgroup">
+          <h4 data-zh="运维" data-en="Operations">运维</h4>
+          <ul>
+            <li data-zh="审计日志：登录（含失败）/ 授权 / 变更，留 2000 条" data-en="Audit: logins (incl. failures) / grants / changes, last 2000">审计日志：登录（含失败）/ 授权 / 变更，留 2000 条</li>
+            <li data-zh="JSON 原子写 · 损坏自动备份并起空库" data-en="Atomic JSON writes · auto backup on corruption">JSON 原子写 · 损坏自动备份并起空库</li>
+            <li data-zh="node verify.mjs 端到端 17/17" data-en="node verify.mjs end-to-end 17/17">node verify.mjs 端到端 17/17</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec" id="forms">
+      <header class="sec-head reveal">
+        <p class="eyebrow"><em>D</em>· <span data-zh="四种启动形态 / FORMS" data-en="Four ways to run / FORMS">四种启动形态 / FORMS</span></p>
+        <h2 data-zh="从 2.7 MB 外壳到一个 exe。" data-en="From a 2.7 MB shell to a single exe.">从 2.7 MB 外壳到一个 exe。</h2>
+      </header>
+      <div class="getbox">
+        <div class="getcell reveal">
+          <h3 data-zh="Tauri 桌面版 · 推荐" data-en="Tauri desktop · recommended">Tauri 桌面版 · 推荐</h3>
+          <p data-zh="外壳 2.7 MB + Node SEA 侧车 83 MB = 86 MB。系统 WebView2 渲染控制台，关窗即退，单实例复用 7788 端口。" data-en="Shell 2.7 MB + Node SEA sidecar 83 MB = 86 MB. Console rendered by system WebView2; closing the window exits, single-instance reuses port 7788.">外壳 2.7 MB + Node SEA 侧车 83 MB = 86 MB。系统 WebView2 渲染控制台，关窗即退，单实例复用 7788 端口。</p>
+          <p class="mono" style="margin-top:10px;">dist-tauri\Aphelion 统一身份认证.exe</p>
+        </div>
+        <div class="getcell reveal d1">
+          <h3 data-zh="Electron 兼容版" data-en="Electron build">Electron 兼容版</h3>
+          <p data-zh="278 MB，自带 Chromium，不依赖系统 WebView2，行为与 Tauri 版一致——老系统的兜底。" data-en="278 MB with bundled Chromium, no WebView2 dependency, identical behavior — the fallback for older systems.">278 MB，自带 Chromium，不依赖系统 WebView2，行为与 Tauri 版一致——老系统的兜底。</p>
+          <p class="mono" style="margin-top:10px;">dist-gui\Aphelion IdP.exe</p>
+        </div>
+        <div class="getcell reveal d2">
+          <h3 data-zh="SEA 单文件服务" data-en="Node SEA single file">SEA 单文件服务</h3>
+          <p data-zh="83 MB 单文件 exe，双击起服务并自动开控制台，数据写同级 data/store.json——适合当后台服务常驻。" data-en="An 83 MB single exe: double-click to serve and open the console; data in data/store.json beside it — built to run as a background service.">83 MB 单文件 exe，双击起服务并自动开控制台，数据写同级 data/store.json——适合当后台服务常驻。</p>
+          <p class="mono" style="margin-top:10px;">dist\Aphelion IdP.exe</p>
+        </div>
+        <div class="getcell reveal d3">
+          <h3 data-zh="源码直启" data-en="From source">源码直启</h3>
+          <p data-zh="Node 20+ 即可：node server.mjs。没有依赖安装步骤，因为根本没有依赖。" data-en="Node 20+ is all you need: node server.mjs. No install step — there are no dependencies.">Node 20+ 即可：node server.mjs。没有依赖安装步骤，因为根本没有依赖。</p>
+          <p class="mono" style="margin-top:10px;">node server.mjs</p>
+        </div>
+      </div>
+    </section>
+
+    <nav class="pn">
+      <a href="distortion.html"><span class="pn-label" data-zh="← 上一件作品" data-en="← Previous work">← 上一件作品</span><span class="pn-name">Distortion</span></a>
+      <a class="next" href="yoursgit.html"><span class="pn-label" data-zh="下一件作品 →" data-en="Next work →">下一件作品 →</span><span class="pn-name">YoursGit</span></a>
+    </nav>
+  </main>
+
+  <footer class="foot">
+    <p class="foot-brand" aria-label="Open Aphelion"><b>Open Aphelion</b></p>
+    <p data-zh-html="DISTORTION 以 AGPL-3.0 开源<i>·</i>FIG.01 由开普勒方程驱动" data-en-html="DISTORTION is open source under AGPL-3.0<i>·</i>FIG.01 is driven by Kepler's equation">DISTORTION 以 AGPL-3.0 开源<i>·</i>FIG.01 由开普勒方程驱动</p>
+    <p data-zh="你正在访问远日点。" data-en="You are at the aphelion.">你正在访问远日点。</p>
+  </footer>
+
+  <script src="assets/main.js"></script>
+</body>
+</html>
