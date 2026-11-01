@@ -15,8 +15,6 @@
 (function () {
   "use strict";
 
-  var REDUCED = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-
   /* ============ 1. 双语 ============ */
   var LANG_KEY = "oa-lang";
   var lang = "zh";
@@ -96,73 +94,23 @@
     });
   }
 
-  /* ============ 2. MG 入场引擎（reveal / rv / stagger / grow） ============ */
+  /* ============ 2. reveal ============ */
   function bindReveal() {
-    var els = document.querySelectorAll(".reveal, .rv, .rv-stagger, .grow");
-    if (!("IntersectionObserver" in window) || REDUCED) {
-      els.forEach(function (el) {
-        el.classList.add("in");
-        if (el.classList.contains("rv-stagger")) {
-          Array.prototype.forEach.call(el.children, function (k) { k.classList.add("in"); });
-        }
-      });
+    var els = document.querySelectorAll(".reveal");
+    if (!("IntersectionObserver" in window)) {
+      els.forEach(function (el) { el.classList.add("in"); });
       return;
     }
     var io = new IntersectionObserver(function (entries) {
       entries.forEach(function (en) {
-        if (!en.isIntersecting) return;
-        var el = en.target;
-        if (el.classList.contains("rv-stagger")) {
-          Array.prototype.forEach.call(el.children, function (k, i) {
-            k.style.transitionDelay = Math.min(i * 80, 640) + "ms";
-            k.classList.add("in");
-          });
-        }
-        el.classList.add("in");
-        io.unobserve(el);
+        if (en.isIntersecting) { en.target.classList.add("in"); io.unobserve(en.target); }
       });
     }, { threshold: 0.12, rootMargin: "0px 0px -8% 0px" });
     els.forEach(function (el) { io.observe(el); });
   }
 
-  /* ============ 2b. 数字滚动计数 ============ */
-  function bindCounters() {
-    var els = document.querySelectorAll("[data-count]");
-    function run(el) {
-      var target = parseInt(el.getAttribute("data-count"), 10) || 0;
-      var pad = parseInt(el.getAttribute("data-pad"), 10) || 0;
-      var suffix = el.getAttribute("data-suffix") || "";
-      function fmt(n) {
-        var s = String(n);
-        while (s.length < pad) s = "0" + s;
-        return s + suffix;
-      }
-      if (REDUCED || target === 0) { el.textContent = fmt(target); return; }
-      var t0 = null, dur = 1200;
-      function tick(now) {
-        if (t0 === null) t0 = now;
-        var pr = Math.min((now - t0) / dur, 1);
-        var eased = 1 - Math.pow(1 - pr, 3);
-        el.textContent = fmt(Math.round(target * eased));
-        if (pr < 1) requestAnimationFrame(tick);
-      }
-      requestAnimationFrame(tick);
-    }
-    if (!("IntersectionObserver" in window)) {
-      els.forEach(run);
-      return;
-    }
-    var io = new IntersectionObserver(function (entries) {
-      entries.forEach(function (en) {
-        if (!en.isIntersecting) return;
-        run(en.target);
-        io.unobserve(en.target);
-      });
-    }, { threshold: 0.4 });
-    els.forEach(function (el) { io.observe(el); });
-  }
-
   /* ============ 3. 轨道演示系统 ============ */
+  var REDUCED = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   var NS = "http://www.w3.org/2000/svg";
 
   function initOrbit() {
@@ -451,6 +399,5 @@
   bindLang();
   bindDropdowns();
   bindReveal();
-  bindCounters();
   initOrbit();
 })();

@@ -63,7 +63,7 @@
     <section class="subhero">
       <a class="backlink" href="index.html" data-zh="← 返回首页" data-en="← Back home">← 返回首页</a>
       <p class="eyebrow"><em>ABOUT</em>· <span data-zh="命名 · 原则 · 人" data-en="Naming · Principles · People">命名 · 原则 · 人</span></p>
-      <h1 class="rv-clip" data-zh="关于 Open Aphelion" data-en="About Open Aphelion">关于 Open Aphelion</h1>
+      <h1 data-zh="关于 Open Aphelion" data-en="About Open Aphelion">关于 Open Aphelion</h1>
       <p class="sub-cn" data-zh="Aphelion：天体轨道上离太阳最远的一点。" data-en="Aphelion: the point of an orbit farthest from the sun.">Aphelion：天体轨道上离太阳最远的一点。</p>
       <p class="lead" data-zh="Open Aphelion 是 ShorelineSama 的独立软件工作室。这一页讲清楚三件事：名字从哪来、规则是什么、谁在做。" data-en="Open Aphelion is the independent studio of ShorelineSama. This page answers three things: where the names come from, what the rules are, and who does it.">Open Aphelion 是 ShorelineSama 的独立软件工作室。这一页讲清楚三件事：名字从哪来、规则是什么、谁在做。</p>
     </section>
@@ -71,7 +71,7 @@
     <section class="sec" id="naming">
       <header class="sec-head reveal">
         <p class="eyebrow"><em>A</em>· <span data-zh="命名宇宙 / NAMING" data-en="Naming / NAMING">命名宇宙 / NAMING</span></p>
-        <h2 class="rv-clip" data-zh="从物理与天文里取名。" data-en="Names from physics and astronomy.">从物理与天文里取名。</h2>
+        <h2 data-zh="从物理与天文里取名。" data-en="Names from physics and astronomy.">从物理与天文里取名。</h2>
       </header>
       <p class="prose reveal" data-zh-html="<strong>Distortion</strong> 取自信号与时空的畸变——音频的失真，也是引力透镜的偏折；<strong>Aphelion</strong> 是轨道上离太阳最远的一点；<strong>YoursGit</strong> 把版本控制的主语还给「你」。三个名字共享同一套隐喻系统：物理与天文。我们不解释热爱，只命名它。" data-en-html="<strong>Distortion</strong> comes from the warping of signals and spacetime — audio clipping, and the bending of light by a gravitational lens. <strong>Aphelion</strong> is the farthest point of an orbit from the sun. <strong>YoursGit</strong> hands the subject of version control back to <i>you</i>. One metaphor system: physics and astronomy. We don't explain the love; we just name it."><strong>Distortion</strong> 取自信号与时空的畸变——音频的失真，也是引力透镜的偏折；<strong>Aphelion</strong> 是轨道上离太阳最远的一点；<strong>YoursGit</strong> 把版本控制的主语还给「你」。三个名字共享同一套隐喻系统：物理与天文。我们不解释热爱，只命名它。</p>
       <p class="prose reveal" data-zh="字标里的图形同样是推导出来的：Aphelion 的 o 被替换成一条倾斜的椭圆轨道——开普勒第一定律说轨道是椭圆、太阳居焦点；环上的橙点即远日点，整颗天体离太阳最远的时刻。首字母 O 保持圆形：轨道的理想形状本就该是个圆。" data-en="The wordmark is derived the same way: the o in Aphelion becomes a tilted elliptical orbit — Kepler's first law says orbits are ellipses with the sun at a focus; the dot on the ring is the aphelion, the moment a body is farthest from the sun. The capital O stays a circle: the ideal shape of an orbit is a circle anyway.">字标里的图形同样是推导出来的：Aphelion 的 o 被替换成一条倾斜的椭圆轨道——开普勒第一定律说轨道是椭圆、太阳居焦点；环上的橙点即远日点，整颗天体离太阳最远的时刻。首字母 O 保持圆形：轨道的理想形状本就该是个圆。</p>
@@ -80,25 +80,25 @@
     <section class="sec" id="principles">
       <header class="sec-head reveal">
         <p class="eyebrow"><em>B</em>· <span data-zh="工程原则 / PRINCIPLES" data-en="Principles / PRINCIPLES">工程原则 / PRINCIPLES</span></p>
-        <h2 class="rv-clip" data-zh="四条原则，全部有代码背书。" data-en="Four principles, all backed by code.">四条原则，全部有代码背书。</h2>
+        <h2 data-zh="四条原则，全部有代码背书。" data-en="Four principles, all backed by code.">四条原则，全部有代码背书。</h2>
       </header>
-      <div class="principles rv-stagger">
-        <div class="principle">
+      <div class="principles">
+        <div class="principle reveal">
           <span class="p-no">P·1</span>
           <h3 data-zh="本地优先" data-en="Local first">本地优先</h3>
           <p data-zh="三件作品都能在断网环境完成全部核心功能。Distortion 的曲库、IdP 的账号库、YoursGit 的解析目标，全在用户磁盘上。" data-en="All three works work offline at their core. Distortion's library, the IdP's account store and YoursGit's parse targets all live on the user's disk.">三件作品都能在断网环境完成全部核心功能。Distortion 的曲库、IdP 的账号库、YoursGit 的解析目标，全在用户磁盘上。</p>
         </div>
-        <div class="principle">
+        <div class="principle reveal d1">
           <span class="p-no">P·2</span>
           <h3 data-zh="克制依赖" data-en="Minimal deps">克制依赖</h3>
           <p data-zh="IdP 运行时零依赖；本站同样零框架零构建。依赖每少一个，供应链就少一分风险，分发就轻一分。" data-en="The IdP has zero runtime deps; this site has zero frameworks and zero build. Fewer dependencies, less supply-chain risk, lighter ships.">IdP 运行时零依赖；本站同样零框架零构建。依赖每少一个，供应链就少一分风险，分发就轻一分。</p>
         </div>
-        <div class="principle">
+        <div class="principle reveal d2">
           <span class="p-no">P·3</span>
           <h3 data-zh="测试先行" data-en="Test first">测试先行</h3>
           <p data-zh="2600+ 用例守着播放器内核，17 个端到端用例守着身份服务，图布局与解析器各有单测。测试不撒谎。" data-en="2600+ cases guard the player kernel, 17 end-to-end cases the identity service, with unit tests for graph layout and parsers. Tests don't lie.">2600+ 用例守着播放器内核，17 个端到端用例守着身份服务，图布局与解析器各有单测。测试不撒谎。</p>
         </div>
-        <div class="principle">
+        <div class="principle reveal d3">
           <span class="p-no">P·4</span>
           <h3 data-zh="克制的动效" data-en="Restrained motion">克制的动效</h3>
           <p data-zh="rise ≤ 300ms，hover ≤ 240ms，尊重 prefers-reduced-motion。动效服务于层级，不服务于炫技。" data-en="rise ≤ 300ms, hover ≤ 240ms, prefers-reduced-motion respected. Motion serves hierarchy, not showing off.">rise ≤ 300ms，hover ≤ 240ms，尊重 prefers-reduced-motion。动效服务于层级，不服务于炫技。</p>
@@ -109,7 +109,7 @@
     <section class="sec" id="team-page">
       <header class="sec-head reveal">
         <p class="eyebrow"><em>C</em>· <span data-zh="团队 / CREW" data-en="Crew / CREW">团队 / CREW</span></p>
-        <h2 class="rv-clip" data-zh="一个人，一条产品线。" data-en="One person, one product line.">一个人，一条产品线。</h2>
+        <h2 data-zh="一个人，一条产品线。" data-en="One person, one product line.">一个人，一条产品线。</h2>
       </header>
       <div class="crew reveal">
         <p class="crew-name">ShorelineSama</p>
@@ -122,23 +122,20 @@
       <section class="sec" id="colophon">
         <header class="sec-head reveal">
           <p class="eyebrow"><em>D</em>· COLOPHON</p>
-          <h2 class="rv-clip" data-zh="本页如何建成。" data-en="How this site is built.">本页如何建成。</h2>
+          <h2 data-zh="本页如何建成。" data-en="How this site is built.">本页如何建成。</h2>
         </header>
-        <div class="openbox rv-stagger">
-          <div class="open-cell">
+        <div class="openbox">
+          <div class="open-cell reveal">
             <h3 data-zh="技术" data-en="Tech">技术</h3>
             <p class="mono" data-zh-html="静态 HTML / CSS / JS · 零框架 · 零构建 · 零第三方运行时依赖。<br>轨道动画：开普勒方程 M = E − e·sinE 牛顿迭代（assets/main.js）。<br>演示动画为 CSS 状态类 + JS 时间轴编排，可重播。" data-en-html="Static HTML / CSS / JS · zero frameworks · zero build · zero third-party runtime.<br>Orbit demo: Kepler's equation M = E − e·sinE via Newton iteration (assets/main.js).<br>The intro sequence is CSS state classes orchestrated by a JS timeline, replayable.">静态 HTML / CSS / JS · 零框架 · 零构建 · 零第三方运行时依赖。<br>轨道动画：开普勒方程 M = E − e·sinE 牛顿迭代（assets/main.js）。<br>演示动画为 CSS 状态类 + JS 时间轴编排，可重播。</p>
           </div>
-          <div class="open-cell">
+          <div class="open-cell reveal d1">
             <h3 data-zh="双语" data-en="Bilingual">双语</h3>
             <p class="mono" data-zh-html="中英切换基于 data-zh / data-en 就地属性，localStorage 记忆选择。<br>默认中文；数字、协议名与专有名词不翻译。<br>翻译由人工核对——如果有别扭的英文，怪我。" data-en-html="ZH/EN toggle works on in-place data-zh / data-en attributes; choice kept in localStorage.<br>Chinese by default; numbers, protocol names and proper nouns stay untranslated.<br>Translations are hand-checked — blame me for any awkward English.">中英切换基于 data-zh / data-en 就地属性，localStorage 记忆选择。<br>默认中文；数字、协议名与专有名词不翻译。<br>翻译由人工核对——如果有别扭的英文，怪我。</p>
           </div>
         </div>
       </section>
     </div>
-<div class="marquee" aria-hidden="true">
-    <div class="marquee-track" data-zh-html='<span class="marquee-seq"><span>本地优先</span><i>·</i><span>零依赖</span><i>·</i><span>测试先行</span><i>·</i><span>克制动效</span><i>·</i><span>远日点</span><i>·</i><span>OPEN APHELION</span><i>·</i></span><span class="marquee-seq"><span>本地优先</span><i>·</i><span>零依赖</span><i>·</i><span>测试先行</span><i>·</i><span>克制动效</span><i>·</i><span>远日点</span><i>·</i><span>OPEN APHELION</span><i>·</i></span>' data-en-html='<span class="marquee-seq"><span>Local first</span><i>·</i><span>Minimal deps</span><i>·</i><span>Test first</span><i>·</i><span>Restrained motion</span><i>·</i><span>Aphelion</span><i>·</i><span>OPEN APHELION</span><i>·</i></span><span class="marquee-seq"><span>Local first</span><i>·</i><span>Minimal deps</span><i>·</i><span>Test first</span><i>·</i><span>Restrained motion</span><i>·</i><span>Aphelion</span><i>·</i><span>OPEN APHELION</span><i>·</i></span>'><span class="marquee-seq"><span>本地优先</span><i>·</i><span>零依赖</span><i>·</i><span>测试先行</span><i>·</i><span>克制动效</span><i>·</i><span>远日点</span><i>·</i><span>OPEN APHELION</span><i>·</i></span><span class="marquee-seq"><span>本地优先</span><i>·</i><span>零依赖</span><i>·</i><span>测试先行</span><i>·</i><span>克制动效</span><i>·</i><span>远日点</span><i>·</i><span>OPEN APHELION</span><i>·</i></span></div>
-  </div>
   </main>
 
   <footer class="foot">
