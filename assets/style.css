@@ -73,6 +73,82 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 700; }
 .d3 { transition-delay: .18s; }
 
 /* ==========================================================
+   MG 入场库（Motion Graphics kit，全 CSS + IO 触发）
+   ========================================================== */
+.rv {
+  opacity: 0;
+  transition:
+    opacity .65s cubic-bezier(.22, 1, .36, 1),
+    transform .65s cubic-bezier(.22, 1, .36, 1),
+    clip-path .75s cubic-bezier(.22, 1, .36, 1);
+}
+.rv-up  { transform: translateY(26px); }
+.rv-left { transform: translateX(-28px); }
+.rv-right { transform: translateX(28px); }
+.rv-scale { transform: scale(.965); }
+.rv.in { opacity: 1; transform: none; }
+
+/* clip 揭示：从左侧遮罩中长出 */
+.rv-clip {
+  opacity: 1;
+  clip-path: inset(0 100% 0 0);
+  transition: clip-path .8s cubic-bezier(.22, 1, .36, 1);
+}
+.rv-clip.in { clip-path: inset(0 0 0 0); }
+
+/* 容器接力：子元素依次入场 */
+.rv-stagger > * {
+  opacity: 0;
+  transform: translateY(22px);
+  transition:
+    opacity .55s cubic-bezier(.22, 1, .36, 1),
+    transform .55s cubic-bezier(.22, 1, .36, 1);
+}
+.rv-stagger.in > * { opacity: 1; transform: none; }
+
+/* 线生长 */
+.grow {
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform .9s cubic-bezier(.22, 1, .36, 1) .15s;
+}
+.grow.in { transform: scaleX(1); }
+
+/* ---------- 页面进入转场 ---------- */
+body { animation: page-in .55s ease-out both; }
+@keyframes page-in { from { opacity: 0; } }
+
+/* ---------- MG 跑马灯 ---------- */
+.marquee {
+  overflow: hidden;
+  border-block: 1px solid var(--line);
+  margin-top: clamp(56px, 8vw, 100px);
+  padding: 18px 0;
+  user-select: none;
+}
+.marquee-track {
+  display: inline-flex;
+  white-space: nowrap;
+  animation: marquee 30s linear infinite;
+  will-change: transform;
+}
+.marquee:hover .marquee-track { animation-play-state: paused; }
+.marquee-seq { display: inline-flex; align-items: baseline; }
+.marquee-seq span {
+  font: 600 clamp(20px, 2.4vw, 30px)/1 var(--sans-en);
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--ink);
+  padding: 0 .55em;
+}
+.marquee-seq i {
+  font-style: normal;
+  color: var(--accent);
+  font-size: clamp(14px, 1.6vw, 20px);
+}
+@keyframes marquee { to { transform: translateX(-50%); } }
+
+/* ==========================================================
    顶栏 · Anthropic 式导航（照截图布局）
    链接组居左 · 字标绝对居中（全大写宽字距）· 右侧 EN + CTA
    ========================================================== */
@@ -896,9 +972,13 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 700; }
    ========================================================== */
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  .reveal { opacity: 1; transform: none; transition: none; }
+  body { animation: none; }
+  .reveal, .rv, .grow, .rv-clip { opacity: 1; transform: none; clip-path: none; transition: none; }
+  .rv-stagger > * { opacity: 1; transform: none; transition: none; }
+  .marquee-track { animation: none; }
   .card:hover { transform: none; }
   .btn-solid:hover, .btn-ghost:hover { transform: none; }
+  .star { animation: none; }
   #orbitSvg.intro .sun, #orbitSvg.intro .orbit, #orbitSvg.intro .body,
   #orbitSvg.intro .ap-mark, #orbitSvg.intro .ap-line, #orbitSvg.intro .ap-label,
   #orbitSvg.intro .ap-sub, #orbitSvg.intro .fig-corner, #orbitSvg.intro .stars { opacity: 1; }
